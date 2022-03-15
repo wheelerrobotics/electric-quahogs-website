@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@react-pdf-viewer/core": "^3.1.2",
-    "canvas": "^2.9.0",
     "gatsby": "^4.9.3",
     "gatsby-plugin-postcss": "^5.9.0",
     "pdfjs-dist": "^2.13.216",
@@ -32,5 +31,15 @@
     "@types/react-dom": "^17.0.13",
     "@types/react-pdf": "^5.0.9",
     "typescript": "^4.6.2"
-  }
+  },
+  "main": "gatsby-config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wheelerrobotics/electric-quahogs-website.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wheelerrobotics/electric-quahogs-website/issues"
+  },
+  "homepage": "https://github.com/wheelerrobotics/electric-quahogs-website#readme"
 }
