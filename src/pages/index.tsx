@@ -155,7 +155,7 @@ const IndexPage = () => {
                     width: "40%",
                 }}
             >
-              <Viewer fileUrl="Engineering Portfolio 2021-2022.pdf" defaultScale={SpecialZoomLevel.PageFit} />
+              <Viewer fileUrl="static/Engineering Portfolio 2021-2022.pdf" defaultScale={SpecialZoomLevel.PageFit} />
               </div>
             </Worker>   
           </TextBox>
