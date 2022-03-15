@@ -4,7 +4,7 @@ import "../css/post_styles.css"
 
 function Post(props: { title: string, subtitle:string, date: string, img: string } | any) {
         return <div className="post">
-            <img src={props.img} className="post_img" width={window.innerWidth/1.4}></img>
+            <img src={props.img} className="post_img" width={typeof window !== 'undefined' && window.innerWidth ? window.innerWidth/1.4 : 300}></img>
             <h1 className="post_title">{props.title}</h1>
             <h2 className="post_desc">{props.subtitle}</h2>
             <p className="post_date">{props.date}</p>
