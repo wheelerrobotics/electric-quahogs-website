@@ -1,5 +1,5 @@
 import * as React from "react"
-import "css/styles.css"
+import "../css/styles.css"
 import NaviButton from "../components/NaviButton";
 import Navi from "../components/Navi";
 import Post from "../components/Post";
