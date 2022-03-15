@@ -1,0 +1,45 @@
+.post {
+    margin-left: 10%;
+}
+.post_title {
+    font-family: inherit;
+    margin-bottom: -1%;
+}
+.post_desc {
+    font-family: inherit;
+    margin: 0%;
+    font-size: 15pt;
+    color: rgb(75, 75, 75);
+}
+.post_date {
+    font-family: inherit;
+    margin: 0%;
+    color: rgb(75, 75, 75);
+}
+.post_img {
+    font-family: inherit;
+
+}
+.reveal {
+    cursor: pointer;
+    margin-top: 0%;
+}
+.expanded {
+    margin-right: 8%;
+    overflow: hidden;
+    /* border: 2px solid black; */
+}
+.expanded > div > p{
+    animation-name: slideinright;
+    animation-duration: 3s;
+}
+@keyframes slideinright {
+    from {
+        margin-bottom: -100%;
+        width: 100%;
+    }    
+    to {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+}

@@ -1,14 +1,13 @@
 import * as React from "react"
-import "../../public/css/styles.css"
-import NaviButton from "../../public/static/NaviButton";
-import Navi from "../../public/static/Navi";
-import Post from "../../public/static/Post";
-import Leader from "../../public/static/Leader";
-import PeopleBox from "../../public/static/PeopleBox";
-import "../../public/static/Normie";
-import PeopleCarousel from "../../public/static/PeopleCarousel";
-import TextBox from "../../public/static/TextBox";
-import { Normie, select } from "../../public/static/Normie";
+import "css/styles.css"
+import NaviButton from "../components/NaviButton";
+import Navi from "../components/Navi";
+import Post from "../components/Post";
+import Leader from "../components/Leader";
+import PeopleBox from "../components/PeopleBox";
+import PeopleCarousel from "../components/PeopleCarousel";
+import TextBox from "../components/TextBox";
+import { Normie, select } from "../components/Normie";
 import { SpecialZoomLevel, Viewer } from '@react-pdf-viewer/core';
 import { Worker } from '@react-pdf-viewer/core';
 // Import the styles
