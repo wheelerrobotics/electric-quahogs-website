@@ -130,13 +130,13 @@ const IndexPage = () => {
           this is where they learn how to "contribute" to our team, whatever that means
         </div>
       </div>
-      <div id="feedback">
+      <div id="feedback" hidden>
         <div style={{ marginTop: "10%" }}>
           <p>suggestions go here :)</p>
           <input id="suggestions" placeholder="this doesnt actually do anything"></input>
         </div>
       </div>
-      <div id="work">
+      <div id="work" hidden>
         <div className="title_area">
           <h1>What We Have Done</h1>
         </div>
