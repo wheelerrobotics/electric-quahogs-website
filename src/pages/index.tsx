@@ -42,7 +42,7 @@ const IndexPage = () => {
               <h1>Logo goes here!</h1>
             </div>
             <div className="posts_area">
-              <Post title={"Initial Commit"} subtitle={"How we became a team"} date={"11/19/20"} img={"https://i.vimeocdn.com/video/1100868839-c27cae7588087e5630afd15af9590d256842a20bf742b4f0cf793b8e64ae3ac4-d?mw=1000&mh=563&q=70"}>
+              <Post title={"Template"} subtitle={"Boilerplate"} date={"11/19/20"} img={"https://i.vimeocdn.com/video/1100868839-c27cae7588087e5630afd15af9590d256842a20bf742b4f0cf793b8e64ae3ac4-d?mw=1000&mh=563&q=70"}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 <br></br>
                 Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
@@ -84,10 +84,10 @@ const IndexPage = () => {
                 <br></br>
                 Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
               </Post>
-              <Post title={"Initial Commit"} subtitle={"How we became a team"} date={"11/19/20"} img={"https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg"}>
+              <Post title={"Sample"} subtitle={"The best post!"} date={"11/11/25"} img={"https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg"}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod in, neque consequuntur animi recusandae atque asperiores beatae saepe nemo quam! Ipsam sit consequatur veniam amet minus fuga quam accusamus eos.
               </Post>
-              <Post title={"Initial Commit"} subtitle={"How we became a team"} date={"11/19/20"} img={"https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg"}>
+              <Post title={"Initial"} subtitle={"Subtitle"} date={"11/19/20"} img={"https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg"}>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, asperiores dolores? Iste facere facilis optio maiores amet nostrum corrupti aut minus, dicta explicabo, ex ratione a enim ab. Nihil, dolor.
               </Post>
             </div>
