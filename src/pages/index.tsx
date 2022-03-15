@@ -8,11 +8,6 @@ import PeopleBox from "../components/PeopleBox";
 import PeopleCarousel from "../components/PeopleCarousel";
 import TextBox from "../components/TextBox";
 import { Normie, select } from "../components/Normie";
-import { SpecialZoomLevel, Viewer } from '@react-pdf-viewer/core';
-import { Worker } from '@react-pdf-viewer/core';
-// Import the styles
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import { Document, Page } from 'react-pdf';
 // styles
 const pageStyles = {
   color: "rgb(100, 100, 100)",
@@ -147,17 +142,7 @@ const IndexPage = () => {
         </div>
         <div id="page_area">
           <TextBox title={"Our Portfolio"}>
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">
-            <div
-                style={{
-                    border: '1px solid rgba(0, 0, 0, 0.3)',
-                    height: '700px',
-                    width: "40%",
-                }}
-            >
-              <Viewer fileUrl="static/Engineering Portfolio 2021-2022.pdf" defaultScale={SpecialZoomLevel.PageFit} />
-              </div>
-            </Worker>   
+            im so mad, ive been trying to load a pdf for 2 hours and every time it fails the build because theres a native file that cant be processed in a library that is used in LITERALLY EVERY pdf viewer for react :(((((( I think maybe iframing a google drive pdf might be the best option {">"}:(
           </TextBox>
         </div>
       </div>

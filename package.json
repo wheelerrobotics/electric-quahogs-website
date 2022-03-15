@@ -16,15 +16,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@react-pdf-viewer/core": "^3.1.2",
-    "canvas": "^2.9.0",
     "gatsby": "^4.9.3",
     "gatsby-plugin-postcss": "^5.9.0",
-    "pdfjs-dist": "^2.13.216",
     "postcss": "^8.4.8",
-    "react": "^17.0.1",
+    "react": "^17.0.2",
     "react-dom": "^17.0.1",
-    "react-pdf": "^5.7.1"
+    "react-pdf": "5.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
