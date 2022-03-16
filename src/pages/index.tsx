@@ -8,11 +8,20 @@ import PeopleBox from "../components/PeopleBox";
 import PeopleCarousel from "../components/PeopleCarousel";
 import TextBox from "../components/TextBox";
 import { Normie, select } from "../components/Normie";
+import Panel from "../components/Panel";
 // styles
 const pageStyles = {
   color: "rgb(100, 100, 100)",
 };
-
+const news = {
+  title: "BREAKING NEWS",
+  subtitle: "Quahogs win states!",
+  author: "daniel duarte-baird",
+  date: "3/22/22",
+  img: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/12/07/07/clam.jpg?quality=75&width=982&height=726&auto=webp",
+  content: "the quahogs have won stats, this means theyre going to worlds",
+  cookie: "winstates"
+}
 
 // data
 const links = [
@@ -36,6 +45,7 @@ const IndexPage = () => {
         <NaviButton title={"Give"} refer={"give"} img={"fa fa-heart"} icn={""}></NaviButton>
       </Navi>
       <div id="pages">
+        
         <div id="home">
           <div className="page_area">
             <div className="title_area">
@@ -143,19 +153,49 @@ const IndexPage = () => {
         <div id="page_area">
           <TextBox title={"Our Portfolio"}>
             im so mad, ive been trying to load a pdf for 2 hours and every time it fails the build because theres a native file that cant be processed in a library that is used in LITERALLY EVERY pdf viewer for react :(((((( I think maybe iframing a google drive pdf might be the best option {">"}:(
+            <iframe width="640" height="700" src="https://drive.google.com/file/d/1n4z77gIPXbqgzuK2CZQ9Pm1dzjA7d2m0/view?usp=sharing" frameBorder="0" allowFullScreen></iframe>
           </TextBox>
+          
         </div>
       </div>
     </div><div className="footer">
         this can be where all the sponsors and other footer stuff goes
       </div>
-      
-
+    <div id="news_panel_div" hidden onLoad={(e)=>{
+      e.currentTarget.hidden = (getCookie('news') != news.cookie) ? false : true
+      setCookie("news", news.cookie, 365)
+    }}>
+        <Panel hidden={false} title={news.title} subtitle={news.subtitle} date={news.date} author={news.author} img={news.img} >
+          {news.content}
+        </Panel>
+    </div>  
 
 
     </main>
 
   );
+}
+
+function getCookie(cname: string) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+function setCookie(cname: string, cvalue: string, exdays: number) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 export default IndexPage

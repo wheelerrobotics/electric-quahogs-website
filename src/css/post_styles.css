@@ -29,17 +29,32 @@
     overflow: hidden;
     /* border: 2px solid black; */
 }
+.expanded > div > hr {
+
+    animation-name: slidedown;
+    animation-duration: 3s;
+}
 .expanded > div > p{
     animation-name: slideinright;
     animation-duration: 3s;
 }
-@keyframes slideinright {
+@keyframes slidedown {
     from {
-        margin-bottom: -100%;
+        margin-top: 0%;
         width: 100%;
     }    
     to {
-        margin-bottom: 0%;
+        margin-top: 100%;
+        width: 100%;
+    }
+}
+@keyframes slideinright {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }    
+    to {
+        margin-left: 0%;
         width: 100%;
     }
 }

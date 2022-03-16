@@ -29,6 +29,9 @@ body {
 .class {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.disable-scroll{
+    overflow-y: hidden;
+  }
 /* body {
     background: rgb(255,196,51);
     background: linear-gradient(120deg, rgba(255,196,51,1) 0%, rgba(121,9,70,1) 37%, rgb(17, 5, 53) 50%, rgba(109,0,164,1) 100%);
