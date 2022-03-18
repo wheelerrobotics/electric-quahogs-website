@@ -19,6 +19,7 @@
     "body-scroll-lock": "^4.0.0-beta.0",
     "gatsby": "^4.9.3",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-gatsby-cloud": "^4.10.0",
     "gatsby-plugin-postcss": "^5.9.0",
     "gatsby-plugin-sharp": "^4.10.0",
     "gatsby-source-filesystem": "^4.10.0",

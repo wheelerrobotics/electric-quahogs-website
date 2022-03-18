@@ -133,8 +133,8 @@ const IndexPage = () => {
 
           <div className="leader_area">
             <PeopleBox title={"Leadership"}>
-              <Leader name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a kopan!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Will.jpg"}></Leader>
-              <Leader name={"Mayte Segura"} grad_year={"2022"} email={"mayte.segura@wheelergmail.org"} bio={"She's a bird, she's a plane, she's mayte segura!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Mayte.jpg"}></Leader>
+              <Leader name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a kopan!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Will.jpg"}></Leader>
+              <Leader name={"Mayte Segura"} grad_year={"2022"} email={"mayte.segura@wheelergmail.org"} bio={"She's a bird, she's a plane, she's mayte segura!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Mayte.jpg"}></Leader>
             </PeopleBox>
             </div>
             <div style={{
@@ -151,20 +151,20 @@ const IndexPage = () => {
             </div>
               
               <PeopleCarousel title="normies :(">
-                <Normie name={"Henry Germano"} grad_year={"2022"} email={"henry.germano@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a plane!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Henry.jpg"}></Normie>
-                <Normie name={"Daniel Duarte-Baird"} grad_year={"2025"} email={"daniel.duarte-baird@wheelergmail.org"} bio={"He's a bird, he's a plane, he's daniel duarte-baird!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Daniel.jpg"}></Normie>
-                <Normie name={"Beatrice Schroder"} grad_year={"2024"} email={"beatrice.schroder@wheelergmail.org"} bio={"She's a bird, she's a plane, she's beatrice schroder!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Beatrice.jpg"}></Normie>
-                <Normie name={"Myles Johnson"} grad_year={"2023"} email={"myles.johnson@wheelergmail.org"} bio={"He's a bird, he's a plane, he's myles johnson!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Myles.jpg"}></Normie>
-                <Normie name={"Reed Turner-Murray"} grad_year={"2022"} email={"reed.turner-murray@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a reed!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Reed.jpg"}></Normie>
-                <Normie name={"Tyler Wang"} grad_year={"2024"} email={"tyler.wang@wheelergmail.org"} bio={"He's a bird, he's a plane, he's tyler wang!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Tyler.jpg"}></Normie>
-                <Normie name={"Jaiden Dash"} grad_year={"2024"} email={"jaiden.dash@wheelergmail.org"} bio={"They're a bird, they're a plane, they're a dash!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Jaiden.jpg"}></Normie>
-                <Normie name={"Lily Thornton"} grad_year={"2024"} email={"lily.thornton@wheelergmail.org"} bio={"He's a bird, she's a plane, they're lily thornton!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Lily.jpg"}></Normie>
-                <Normie name={"Griffin Haismann"} grad_year={"2025"} email={"griffin.haismann@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a griffin!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Griffin.jpg"}></Normie>
-                <Normie name={"Seoyon Kim"} grad_year={"2025"} email={"seoyon.kim@wheelergmail.org"} bio={"She's a bird, she's a plane, she's seoyon kim!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Seoyon.jpg"}></Normie>
-                <Normie name={"Isabelle Page"} grad_year={"2025"} email={"isabelle.idkherlastname@wheelergmail.org"} bio={"She's a bird, she's a plane, she's isabelle!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Isabelle.jpg"}></Normie>
-                {/* <Normie name={"Jackson Page"} grad_year={"2025"} email={"jackson.page@wheelergmail.org"} bio={"He's a bird, he's a plane, he's jackson page!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Jackson.jpg"}></Normie> */}
-                {/* <Normie name={"Charlie Shea"} grad_year={"2025"} email={"charlie.shea@wheelergmail.org"} bio={"He's a bird, he's a plane, he's charlie shea!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Charlie.jpg"}></Normie> */}
-                <Normie name={"Sam Kurtis"} grad_year={"2022"} email={"sam.kurtis@wheelergmail.org"} bio={"He's a bird, he's a plane, he's sam kurtis!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Sam.jpg"}></Normie>
+                <Normie name={"Henry Germano"} grad_year={"2022"} email={"henry.germano@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a plane!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Henry.jpg"}></Normie>
+                <Normie name={"Daniel Duarte-Baird"} grad_year={"2025"} email={"daniel.duarte-baird@wheelergmail.org"} bio={"He's a bird, he's a plane, he's daniel duarte-baird!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Daniel.jpg"}></Normie>
+                <Normie name={"Beatrice Schroder"} grad_year={"2024"} email={"beatrice.schroder@wheelergmail.org"} bio={"She's a bird, she's a plane, she's beatrice schroder!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Beatrice.jpg"}></Normie>
+                <Normie name={"Myles Johnson"} grad_year={"2023"} email={"myles.johnson@wheelergmail.org"} bio={"He's a bird, he's a plane, he's myles johnson!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Myles.jpg"}></Normie>
+                <Normie name={"Reed Turner-Murray"} grad_year={"2022"} email={"reed.turner-murray@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a reed!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Reed.jpg"}></Normie>
+                <Normie name={"Tyler Wang"} grad_year={"2024"} email={"tyler.wang@wheelergmail.org"} bio={"He's a bird, he's a plane, he's tyler wang!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Tyler.jpg"}></Normie>
+                <Normie name={"Jaiden Dash"} grad_year={"2024"} email={"jaiden.dash@wheelergmail.org"} bio={"They're a bird, they're a plane, they're a dash!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Jaiden.jpg"}></Normie>
+                <Normie name={"Lily Thornton"} grad_year={"2024"} email={"lily.thornton@wheelergmail.org"} bio={"He's a bird, she's a plane, they're lily thornton!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Lily.jpg"}></Normie>
+                <Normie name={"Griffin Haismann"} grad_year={"2025"} email={"griffin.haismann@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a griffin!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Griffin.jpg"}></Normie>
+                <Normie name={"Seoyon Kim"} grad_year={"2025"} email={"seoyon.kim@wheelergmail.org"} bio={"She's a bird, she's a plane, she's seoyon kim!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Seoyon.jpg"}></Normie>
+                <Normie name={"Isabelle Page"} grad_year={"2025"} email={"isabelle.idkherlastname@wheelergmail.org"} bio={"She's a bird, she's a plane, she's isabelle!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Isabelle.jpg"}></Normie>
+                {/* <Normie name={"Jackson Page"} grad_year={"2025"} email={"jackson.page@wheelergmail.org"} bio={"He's a bird, he's a plane, he's jackson page!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Jackson.jpg"}></Normie> */}
+                {/* <Normie name={"Charlie Shea"} grad_year={"2025"} email={"charlie.shea@wheelergmail.org"} bio={"He's a bird, he's a plane, he's charlie shea!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Charlie.jpg"}></Normie> */}
+                <Normie name={"Sam Kurtis"} grad_year={"2022"} email={"sam.kurtis@wheelergmail.org"} bio={"He's a bird, he's a plane, he's sam kurtis!"} img={"public/images/Pictures/Team Photo/252 2022 Photos/Sam.jpg"}></Normie>
               </PeopleCarousel>
           </div>
       </div>
@@ -183,19 +183,19 @@ const IndexPage = () => {
                   </li>
                   <li>
                     <p>Then click "Make A Gift"</p>
-                    <img src="static/images/step2.png"></img>
+                    <img src="public/images/step2.png"></img>
                   </li>
                   <li>
                     <p>Next, select your donation amount.</p>
-                    <img src="static/images/step1.png" height={200}></img>
+                    <img src="public/images/step1.png" height={200}></img>
                   </li>
                   <li>
                     <p>After that, select <u><i>Robotics World Champion Sponsorship</i></u> as the destination.</p>
-                    <img src="static/images/step4.png" height={200}></img>
+                    <img src="public/images/step4.png" height={200}></img>
                   </li>
                   <li>
                     <p>Finally, secure your payment!</p>
-                    <img src="static/images/step5.png"></img>
+                    <img src="public/images/step5.png"></img>
                   </li>
                 </ol>
                 <hr></hr>
