@@ -18,6 +18,29 @@ import SponsorBox from "../components/SponsorBox";
 import Sponsor from "../components/Sponsor";
 import SideBarButtonDrop from "../components/SideBarButtonDrop";
 import Matter from "matter-js";
+
+import willpic from "../images/Pictures/Team Photo/252 2022 Photos/Will.png"
+import maytepic from "../images/Pictures/Team Photo/252 2022 Photos/Mayte.png"
+import mylespic from "../images/Pictures/Team Photo/252 2022 Photos/Myles.png"
+import danielpic from "../images/Pictures/Team Photo/252 2022 Photos/Daniel.png"
+import henrypic from "../images/Pictures/Team Photo/252 2022 Photos/Henry.png"
+import beatricepic from "../images/Pictures/Team Photo/252 2022 Photos/Beatrice.png"
+import reedpic from "../images/Pictures/Team Photo/252 2022 Photos/Reed.png"
+import isabellepic from "../images/Pictures/Team Photo/252 2022 Photos/Isabelle.png"
+import jaidenpic from "../images/Pictures/Team Photo/252 2022 Photos/Jaiden.png"
+import lilypic from "../images/Pictures/Team Photo/252 2022 Photos/Lily.png"
+import tylerpic from "../images/Pictures/Team Photo/252 2022 Photos/Tyler.png"
+import seoyonpic from "../images/Pictures/Team Photo/252 2022 Photos/Seoyon.png"
+import griffinpic from "../images/Pictures/Team Photo/252 2022 Photos/Griffin.png"
+import sampic from "../images/Pictures/Team Photo/252 2022 Photos/Sam.png"
+import nathanpic from "../images/Pictures/Team Photo/252 2022 Photos/Nathan.png" // ahhhhh
+
+import step1 from "../images/step1.png"
+import step2 from "../images/step2.png"
+import step3 from "../images/step3.png"
+import step4 from "../images/step4.png"
+import step5 from "../images/step5.png"
+
 // styles
 const pageStyles = {
   color: "rgb(100, 100, 100)",
@@ -151,20 +174,20 @@ const IndexPage = () => {
             </div>
               
               <PeopleCarousel title="normies :(">
-                <Normie name={"Henry Germano"} grad_year={"2022"} email={"henry.germano@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a plane!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Henry.jpg"}></Normie>
-                <Normie name={"Daniel Duarte-Baird"} grad_year={"2025"} email={"daniel.duarte-baird@wheelergmail.org"} bio={"He's a bird, he's a plane, he's daniel duarte-baird!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Daniel.jpg"}></Normie>
-                <Normie name={"Beatrice Schroder"} grad_year={"2024"} email={"beatrice.schroder@wheelergmail.org"} bio={"She's a bird, she's a plane, she's beatrice schroder!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Beatrice.jpg"}></Normie>
-                <Normie name={"Myles Johnson"} grad_year={"2023"} email={"myles.johnson@wheelergmail.org"} bio={"He's a bird, he's a plane, he's myles johnson!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Myles.jpg"}></Normie>
-                <Normie name={"Reed Turner-Murray"} grad_year={"2022"} email={"reed.turner-murray@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a reed!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Reed.jpg"}></Normie>
-                <Normie name={"Tyler Wang"} grad_year={"2024"} email={"tyler.wang@wheelergmail.org"} bio={"He's a bird, he's a plane, he's tyler wang!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Tyler.jpg"}></Normie>
-                <Normie name={"Jaiden Dash"} grad_year={"2024"} email={"jaiden.dash@wheelergmail.org"} bio={"They're a bird, they're a plane, they're a dash!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Jaiden.jpg"}></Normie>
-                <Normie name={"Lily Thornton"} grad_year={"2024"} email={"lily.thornton@wheelergmail.org"} bio={"He's a bird, she's a plane, they're lily thornton!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Lily.jpg"}></Normie>
-                <Normie name={"Griffin Haismann"} grad_year={"2025"} email={"griffin.haismann@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a griffin!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Griffin.jpg"}></Normie>
-                <Normie name={"Seoyon Kim"} grad_year={"2025"} email={"seoyon.kim@wheelergmail.org"} bio={"She's a bird, she's a plane, she's seoyon kim!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Seoyon.jpg"}></Normie>
-                <Normie name={"Isabelle Page"} grad_year={"2025"} email={"isabelle.idkherlastname@wheelergmail.org"} bio={"She's a bird, she's a plane, she's isabelle!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Isabelle.jpg"}></Normie>
+                <Normie name={"Henry Germano"} grad_year={"2022"} email={"henry.germano@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a plane!"} img={henrypic}></Normie>
+                <Normie name={"Daniel Duarte-Baird"} grad_year={"2025"} email={"daniel.duarte-baird@wheelergmail.org"} bio={"He's a bird, he's a plane, he's daniel duarte-baird!"} img={danielpic}></Normie>
+                <Normie name={"Beatrice Schroder"} grad_year={"2024"} email={"beatrice.schroder@wheelergmail.org"} bio={"She's a bird, she's a plane, she's beatrice schroder!"} img={beatricepic}></Normie>
+                <Normie name={"Myles Johnson"} grad_year={"2023"} email={"myles.johnson@wheelergmail.org"} bio={"He's a bird, he's a plane, he's myles johnson!"} img={mylespic}></Normie>
+                <Normie name={"Reed Turner-Murray"} grad_year={"2022"} email={"reed.turner-murray@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a reed!"} img={reedpic}></Normie>
+                <Normie name={"Tyler Wang"} grad_year={"2024"} email={"tyler.wang@wheelergmail.org"} bio={"He's a bird, he's a plane, he's tyler wang!"} img={tylerpic}></Normie>
+                <Normie name={"Jaiden Dash"} grad_year={"2024"} email={"jaiden.dash@wheelergmail.org"} bio={"They're a bird, they're a plane, they're a dash!"} img={jaidenpic}></Normie>
+                <Normie name={"Lily Thornton"} grad_year={"2024"} email={"lily.thornton@wheelergmail.org"} bio={"He's a bird, she's a plane, they're lily thornton!"} img={lilypic}></Normie>
+                <Normie name={"Griffin Haismann"} grad_year={"2025"} email={"griffin.haismann@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a griffin!"} img={griffinpic}></Normie>
+                <Normie name={"Seoyon Kim"} grad_year={"2025"} email={"seoyon.kim@wheelergmail.org"} bio={"She's a bird, she's a plane, she's seoyon kim!"} img={seoyonpic}></Normie>
+                <Normie name={"Isabelle Page"} grad_year={"2025"} email={"isabelle.idkherlastname@wheelergmail.org"} bio={"She's a bird, she's a plane, she's isabelle!"} img={isabellepic}></Normie>
                 {/* <Normie name={"Jackson Page"} grad_year={"2025"} email={"jackson.page@wheelergmail.org"} bio={"He's a bird, he's a plane, he's jackson page!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Jackson.jpg"}></Normie> */}
                 {/* <Normie name={"Charlie Shea"} grad_year={"2025"} email={"charlie.shea@wheelergmail.org"} bio={"He's a bird, he's a plane, he's charlie shea!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Charlie.jpg"}></Normie> */}
-                <Normie name={"Sam Kurtis"} grad_year={"2022"} email={"sam.kurtis@wheelergmail.org"} bio={"He's a bird, he's a plane, he's sam kurtis!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Sam.jpg"}></Normie>
+                <Normie name={"Sam Kurtis"} grad_year={"2022"} email={"sam.kurtis@wheelergmail.org"} bio={"He's a bird, he's a plane, he's sam kurtis!"} img={sampic}></Normie>
               </PeopleCarousel>
           </div>
       </div>
@@ -183,19 +206,19 @@ const IndexPage = () => {
                   </li>
                   <li>
                     <p>Then click "Make A Gift"</p>
-                    <img src="../../images/step2.png"></img>
+                    <img src={step2}></img>
                   </li>
                   <li>
                     <p>Next, select your donation amount.</p>
-                    <img src="../../images/step1.png" height={200}></img>
+                    <img src={step1} height={200}></img>
                   </li>
                   <li>
                     <p>After that, select <u><i>Robotics World Champion Sponsorship</i></u> as the destination.</p>
-                    <img src="../../images/step4.png" height={200}></img>
+                    <img src={step4} height={200}></img>
                   </li>
                   <li>
                     <p>Finally, secure your payment!</p>
-                    <img src="../../images/step5.png"></img>
+                    <img src={step5}></img>
                   </li>
                 </ol>
                 <hr></hr>
