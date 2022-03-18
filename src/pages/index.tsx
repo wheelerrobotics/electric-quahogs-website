@@ -221,7 +221,7 @@ const IndexPage = () => {
                     <img src={step1} height={200}></img>
                   </li>
                   <li>
-                    <p>After that, select <u><i>Robotics World Champion Sponsorship</i></u> as the destination.</p>
+                    <p>After that, select <u><i>Robotics World Champion Sponsorship</i></u> as the designation.</p>
                     <img src={step4} height={200}></img>
                   </li>
                   <li>
