@@ -1,12 +1,48 @@
-* {
+
+
+
+
+.universal {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+iframe {
+    border: none;
+}
+p {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.back_canvas {
+    position:absolute;
+    top: 0%;
+    left: 0%;
+}
+body.noscroll{
+    position:sticky;
+    overflow:hidden;
+    overflow-y: hidden;
+}
+.instructions{
+    font-size: 16pt;
+    margin-bottom: 5%;
+}
+.instructions > li > p {
+    font-size: 16pt;
 }
 body {
 
-    background-color: rgb(70, 70, 70);
+    background: linear-gradient(180deg, rgb(223, 209, 130) 70%, rgb(33, 0, 65) 90%);
+    /* background-image: url("https://dj7ev245wrwsrpcps1m4o1ac-wpengine.netdna-ssl.com/wp-content/uploads/cache/thumbs_1920x1080/788_nod_gridbg_dark.jpg"); */
 }
 .page_area {
-    background-color: rgb(70, 70, 70);
+    /* background-color: rgb(70, 70, 70); */
+}
+.page_body{
+    display: flex;
+    flex-direction: row;
 }
 .people_area > h1{
     margin-top: 10%;
@@ -21,6 +57,7 @@ body {
     margin-top: 10%;
     margin-bottom: -5%;
     margin-inline: 5%;
+    color: purple;
     font-family: Georgia, 'Times New Roman', Times, serif;
     align-items: center;
     text-align: center;
@@ -44,10 +81,12 @@ body {
     margin: 5%;
     background-color: rgb(194, 194, 194);
     outline: 2px gray solid;
+    width: 60%;
     padding: 2%;
+
 }
 .leader_area {
-    margin: 5%;
+    margin-inline: 5%;
     margin-top: 5%;
     background-color: rgb(194, 194, 194);
     outline: 2px gray solid;
@@ -64,5 +103,19 @@ body {
 }
 .footer {
     position: static;
-    bottom: 0%;
+    display: block;
+    bottom: 0px;
 }
+.debug {
+    border: 3px transparent solid;
+}
+/* 
+.footer > p {
+    position: absolute;
+    margin-top: -32px;
+    bottom: -20px;
+    left: 0%;
+    font-size: small;
+    color: rgb(170, 170, 170);
+    z-index: -10;
+} */

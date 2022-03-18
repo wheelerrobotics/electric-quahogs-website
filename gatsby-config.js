@@ -4,5 +4,7 @@ module.exports = {
       title: `Electric Quahogs`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-postcss"]
+  plugins: [
+    "gatsby-plugin-postcss"
+  ]
 };

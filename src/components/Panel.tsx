@@ -1,13 +1,19 @@
 import * as React from "react"
 import "../css/panel_styles.css"
 import Post from "./Post"
-
+import { clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { interbeg } from "./inter";
 
 function Panel(props: {title: string, subtitle: string, date: string, author: string, img: string} | any) {
         return <div hidden={props.hidden ? true : false} className="panel_backdrop" onKeyDown={(e)=>{e.currentTarget.hidden = (e.key == 'esc') || true}}>
             <div className="panel_body center">
                 <div className="panel_header">
-                    <button onClick={(e)=>{e!.currentTarget!.parentElement!.parentElement!.parentElement!.hidden = true}}>x</button>
+                    <div className="panel_navi">
+                        <button style={{}} onClick={(e)=>{
+                            e!.currentTarget!.parentElement!.parentElement!.parentElement!.parentElement!.hidden = true
+                            clearAllBodyScrollLocks() 
+                        }}>x</button>
+                    </div>
                     <img src="https://i.vimeocdn.com/video/1100868839-c27cae7588087e5630afd15af9590d256842a20bf742b4f0cf793b8e64ae3ac4-d?mw=1000&mh=563&q=70"></img>
                     <h1>{props.title ?? "Breaking News!"}</h1>
                     <div style={{

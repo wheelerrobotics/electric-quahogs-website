@@ -7,6 +7,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
+    overflow: hidden;
 }
 .panel_header > img {
     width: 100%;
@@ -40,6 +41,20 @@
     height: 80%;
     overflow-y: scroll;
 
+}
+.panel_navi {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 20%;
+    border-radius: 0% 0% 100px 0%;
+}
+.panel_navi > button {
+    background-color: transparent;
+    color: rgb(196, 196, 196);
+    border: none;
+    cursor: pointer;
+    
 }
 @keyframes bord {
     from {

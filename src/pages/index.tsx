@@ -9,6 +9,16 @@ import PeopleCarousel from "../components/PeopleCarousel";
 import TextBox from "../components/TextBox";
 import { Normie, select } from "../components/Normie";
 import Panel from "../components/Panel";
+import "../components/inter.ts";
+import {newInter} from "../components/inter";
+import Interactive from "../components/InteractiveBackground";
+import SideBar from "../components/SideBar.";
+import SideBarButton from "../components/SideBarButton";
+import SponsorBox from "../components/SponsorBox";
+import Sponsor from "../components/Sponsor";
+import SideBarButtonDrop from "../components/SideBarButtonDrop";
+import Matter from "matter-js";
+import {interbeg} from "../components/inter"
 // styles
 const pageStyles = {
   color: "rgb(100, 100, 100)",
@@ -33,6 +43,7 @@ const IndexPage = () => {
   return (
 
   <main>
+    <span className="universal">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossOrigin="anonymous"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossOrigin="anonymous"></link>
@@ -51,55 +62,67 @@ const IndexPage = () => {
             <div className="title_area">
               <h1>Logo goes here!</h1>
             </div>
-            <div className="posts_area">
-              <Post title={"Template"} subtitle={"Boilerplate"} date={"11/19/20"} img={"https://i.vimeocdn.com/video/1100868839-c27cae7588087e5630afd15af9590d256842a20bf742b4f0cf793b8e64ae3ac4-d?mw=1000&mh=563&q=70"}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+            <div className="page_body">
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br></br>
-                Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
-              </Post>
-              <Post title={"Sample"} subtitle={"The best post!"} date={"11/11/25"} img={"https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg"}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod in, neque consequuntur animi recusandae atque asperiores beatae saepe nemo quam! Ipsam sit consequatur veniam amet minus fuga quam accusamus eos.
-              </Post>
-              <Post title={"Initial"} subtitle={"Subtitle"} date={"11/19/20"} img={"https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg"}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, asperiores dolores? Iste facere facilis optio maiores amet nostrum corrupti aut minus, dicta explicabo, ex ratione a enim ab. Nihil, dolor.
-              </Post>
+              <SideBar title="Loving the electric quahogs? Look over here!">
+                  <SideBarButton title={"Latest News!"} redirect={"news"}></SideBarButton>
+                  <SideBarButton title={"Our Github!"} redirect={"https://github.com/wheelerrobotics"}></SideBarButton>
+                  <SideBarButton title={"Our Github!"} redirect={"https://github.com/wheelerrobotics"}></SideBarButton>
+                  <SideBarButton title={"Our Github!"} redirect={"https://github.com/wheelerrobotics"}></SideBarButton>
+              </SideBar>
+              <div className="posts_area">
+                <Post title={"Template"} subtitle={"Boilerplate"} date={"11/19/20"} img={"https://i.vimeocdn.com/video/1100868839-c27cae7588087e5630afd15af9590d256842a20bf742b4f0cf793b8e64ae3ac4-d?mw=1000&mh=563&q=70"}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br></br>
+                  Officiis veniam laudantium tempore magni sunt aliquam neque non velit saepe? Iure, similique qui fugiat inventore quia corporis deleniti minima natus consequuntur.
+                </Post>
+                <Post title={"Sample"} subtitle={"The best post!"} date={"11/11/25"} img={"https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg"}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod in, neque consequuntur animi recusandae atque asperiores beatae saepe nemo quam! Ipsam sit consequatur veniam amet minus fuga quam accusamus eos.
+                </Post>
+                <Post title={"Initial"} subtitle={"Subtitle"} date={"11/19/20"} img={"https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg"}>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, asperiores dolores? Iste facere facilis optio maiores amet nostrum corrupti aut minus, dicta explicabo, ex ratione a enim ab. Nihil, dolor.
+                </Post>
+              </div>
+              <SponsorBox>
+                <Sponsor img={"https://cdn-icons-png.flaticon.com/512/25/25231.png"}></Sponsor>
+              </SponsorBox>
             </div>
           </div>
         </div>
@@ -111,34 +134,78 @@ const IndexPage = () => {
 
           <div className="leader_area">
             <PeopleBox title={"Leadership"}>
-              <Leader name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Leader>
-              <Leader name={"Mayte Segura"} grad_year={"2022"} email={"mayte.segura@wheelergmail.org"} bio={"SHe's a bird, she's a plane, she's mayte segura!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Leader>
+              <Leader name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a kopan!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Will.jpg"}></Leader>
+              <Leader name={"Mayte Segura"} grad_year={"2022"} email={"mayte.segura@wheelergmail.org"} bio={"She's a bird, she's a plane, she's mayte segura!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Mayte.jpg"}></Leader>
             </PeopleBox>
             </div>
-            <TextBox title={"About Us"}> We are the electric quahogs! yay! </TextBox>
-              <PeopleCarousel>
-                <Normie name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Normie>
-                <Normie name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Normie>
-                <Normie name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Normie>
-                <Normie name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Normie>
-                <Normie name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Normie>
-                <Normie name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Normie>
-                <Normie name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Normie>
-                <Normie name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Normie>
-                <Normie name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's will kopans!"} img={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/000/814/873/datas/xlarge.png"}></Normie>
+            <div style={{
+              display: "flex",
+              flexDirection: 'row'
+            }}>
+              
+            <TextBox title={"About Us"} width={47.5} right={0}> <p>
+              We are the electric quahogs! yay!
+              </p> </TextBox>
+              <TextBox title={"About Us"} width={47.5} left={5}> <p>
+              We are the electric quahogs! yay!
+              </p> </TextBox>
+            </div>
+              
+              <PeopleCarousel title="normies :(">
+                <Normie name={"Henry Germano"} grad_year={"2022"} email={"henry.germano@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a plane!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Henry.jpg"}></Normie>
+                <Normie name={"Daniel Duarte-Baird"} grad_year={"2025"} email={"daniel.duarte-baird@wheelergmail.org"} bio={"He's a bird, he's a plane, he's daniel duarte-baird!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Daniel.jpg"}></Normie>
+                <Normie name={"Beatrice Schroder"} grad_year={"2024"} email={"beatrice.schroder@wheelergmail.org"} bio={"She's a bird, she's a plane, she's beatrice schroder!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Beatrice.jpg"}></Normie>
+                <Normie name={"Myles Johnson"} grad_year={"2023"} email={"myles.johnson@wheelergmail.org"} bio={"He's a bird, he's a plane, he's myles johnson!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Myles.jpg"}></Normie>
+                <Normie name={"Reed Turner-Murray"} grad_year={"2022"} email={"reed.turner-murray@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a reed!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Reed.jpg"}></Normie>
+                <Normie name={"Tyler Wang"} grad_year={"2024"} email={"tyler.wang@wheelergmail.org"} bio={"He's a bird, he's a plane, he's tyler wang!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Tyler.jpg"}></Normie>
+                <Normie name={"Jaiden Dash"} grad_year={"2024"} email={"jaiden.dash@wheelergmail.org"} bio={"They're a bird, they're a plane, they're a dash!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Jaiden.jpg"}></Normie>
+                <Normie name={"Lily Thornton"} grad_year={"2024"} email={"lily.thornton@wheelergmail.org"} bio={"He's a bird, she's a plane, they're lily thornton!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Lily.jpg"}></Normie>
+                <Normie name={"Griffin Haismann"} grad_year={"2025"} email={"griffin.haismann@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a griffin!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Griffin.jpg"}></Normie>
+                <Normie name={"Seoyon Kim"} grad_year={"2025"} email={"seoyon.kim@wheelergmail.org"} bio={"She's a bird, she's a plane, she's seoyon kim!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Seoyon.jpg"}></Normie>
+                <Normie name={"Isabelle Page"} grad_year={"2025"} email={"isabelle.idkherlastname@wheelergmail.org"} bio={"She's a bird, she's a plane, she's isabelle!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Isabelle.jpg"}></Normie>
+                {/* <Normie name={"Jackson Page"} grad_year={"2025"} email={"jackson.page@wheelergmail.org"} bio={"He's a bird, he's a plane, he's jackson page!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Jackson.jpg"}></Normie> */}
+                {/* <Normie name={"Charlie Shea"} grad_year={"2025"} email={"charlie.shea@wheelergmail.org"} bio={"He's a bird, he's a plane, he's charlie shea!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Charlie.jpg"}></Normie> */}
+                <Normie name={"Sam Kurtis"} grad_year={"2022"} email={"sam.kurtis@wheelergmail.org"} bio={"He's a bird, he's a plane, he's sam kurtis!"} img={"static/images/Pictures/Team Photo/252 2022 Photos/Sam.jpg"}></Normie>
               </PeopleCarousel>
           </div>
-        <div className="people_area">
-          man, theres so many thing that are interesting about us :)
-        </div>
       </div>
       <div id="give" hidden>
         <div className="title_area">
             <h1>How <i>You</i> Can Help</h1>
           </div>
-        <div className="give_div">
-          this is where they learn how to "contribute" to our team, whatever that means
-        </div>
+          <TextBox title={"We are trying to get to worlds, and every penny counts!"}>
+              <h3>Here is how you can donate:</h3>
+              <div style={{
+                marginLeft: "5%"
+              }}>
+                <ol className="instructions">
+                  <li>
+                      <p>First, go to <u style={{cursor: "pointer"}}><a onClick={(e)=>{window.open("https://www.wheelerschool.org/support")}}>wheelerschool.org/support</a></u>.</p>
+                  </li>
+                  <li>
+                    <p>Then click "Make A Gift"</p>
+                    <img src="static/images/step2.png"></img>
+                  </li>
+                  <li>
+                    <p>Next, select your donation amount.</p>
+                    <img src="static/images/step1.png"></img>
+                  </li>
+                  <li>
+                    <p>After that, select <u><i>Robotics World Champion Sponsorship</i></u> as the destination.</p>
+                    <img src="static/images/step4.png"></img>
+                  </li>
+                  <li>
+                    <p>Finally, secure your payment!</p>
+                    <img src="static/images/step5.png"></img>
+                  </li>
+                </ol>
+                <div>
+                  <h2 style={{fontFamily: "Georgia"}}>If you would like, you can fill out this form to tell us why you donated and so that we can thank you!</h2>
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScan6HDMH5laWBZs8HrQ2481wpCBnC5ps6YhN_XwIybk4J88w/viewform?embedded=true" width="640" height="883" style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
+                </div>
+
+              </div>
+            </TextBox>
       </div>
       <div id="feedback" hidden>
         <div style={{ marginTop: "10%" }}>
@@ -152,14 +219,25 @@ const IndexPage = () => {
         </div>
         <div id="page_area">
           <TextBox title={"Our Portfolio"}>
-            im so mad, ive been trying to load a pdf for 2 hours and every time it fails the build because theres a native file that cant be processed in a library that is used in LITERALLY EVERY pdf viewer for react :(((((( I think maybe iframing a google drive pdf might be the best option {">"}:(
-            <iframe width="640" height="700" src="https://drive.google.com/file/d/1n4z77gIPXbqgzuK2CZQ9Pm1dzjA7d2m0/view?usp=sharing" frameBorder="0" allowFullScreen></iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScan6HDMH5laWBZs8HrQ2481wpCBnC5ps6YhN_XwIybk4J88w/viewform?embedded=true" width="640" height="883" style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
+            <p>im so mad, ive been trying to load a pdf for 2 hours and every time it fails the build because theres a native file that cant be processed in a library that is used in LITERALLY EVERY pdf viewer for react :(((((( I think maybe iframing a google drive pdf might be the best option {">"}:(
+              </p>
           </TextBox>
-          
+
         </div>
       </div>
-    </div><div className="footer">
-        this can be where all the sponsors and other footer stuff goes
+    </div>
+    <div className="footer" id="tata">
+        <Interactive id={"eeeer"}></Interactive>
+        <p style={{
+          position: "sticky",
+          marginTop: "-32px",
+          bottom: "-20px",
+          left: "0%",
+          fontSize: "small",
+          color: "rgb(170, 170, 170)",
+          zIndex: "-10",
+        }}>here, have some fun (compliments of danielduarte-baird)</p> 
       </div>
     <div id="news_panel_div" hidden onLoad={(e)=>{
       e.currentTarget.hidden = (getCookie('news') != news.cookie) ? false : true
@@ -169,6 +247,7 @@ const IndexPage = () => {
           {news.content}
         </Panel>
     </div>  
+    </span>
 
 
     </main>

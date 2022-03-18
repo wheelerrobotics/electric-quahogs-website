@@ -7,6 +7,7 @@ function NaviButton(props: { title: string, refer: string, img: string, icn: str
             for(let page of document.getElementById("pages")?.childNodes ){
                 (page.id == props.refer) ? page.hidden = false : page.hidden = true;
             }
+            (window).scrollTo(0, 0);
 
         }}>
                     <i className={props.img}></i>

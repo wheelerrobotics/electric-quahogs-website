@@ -3,10 +3,11 @@
 }
 .person {
     display: inline;
+    margin: 5%;
 }
 .person_img {
     border-radius: 50%;
-    width: 40%;
+    height: 80%;
     transition: 300ms;
 }
 .person_name {
@@ -29,6 +30,7 @@
 .people_box {
     display: flex;
     flex-direction: row;
+    width: 200%;
 }
 .people_header > h1 {
     text-align: left;
@@ -50,11 +52,12 @@
 }
 .normie > p {
     text-align: center;
+    white-space: pre;
     margin: 0%;
 }
 .normie_scroll {
-    overflow: scroll;
-
+    overflow-x: scroll;
+    /* height: 550px; */
 }
 .normie_area {
     margin: 5%;
@@ -72,13 +75,12 @@
               box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
               margin-top: -3%;
     transition: 500ms;
+    padding: 2%;
   }
-
 .normie:hover > img {
-    -webkit-transform: translateZ(500px);
-              transform: translateZ(500px);
-    width: 113%;
-    border-radius: 0%;
+    /* width: 113%;
+    height: 113%; */
+    border-radius: 10px;
     transition: 500ms;
 }
   
@@ -122,3 +124,9 @@
     }
   }
   
+  .y-mandatory {
+    scroll-snap-type: y mandatory;
+  }
+  .snap-stop-always {
+    scroll-snap-stop: always;
+  }
