@@ -1,44 +1,8 @@
 import Matter, { Events } from "matter-js";
 
-function interbeg(canvasid: string) {
-    var Engine = Matter.Engine,
-    Render = Matter.Render,
-    Runner = Matter.Runner,
-    Composites = Matter.Composites,
-    Common = Matter.Common,
-    MouseConstraint = Matter.MouseConstraint,
-    Mouse = Matter.Mouse,
-    Composite = Matter.Composite,
-    Bodies = Matter.Bodies;
-
-    // create engine
-    var engine = Engine.create(),
-    world = engine.world; 
-    let can: HTMLCanvasElement | null = null;
-    while (can == null) can = document.getElementById(canvasid) as HTMLCanvasElement;
-    let width = window.innerWidth;
-    let height = 3*window.innerHeight/10;
-    // create renderer
-    let render = Render.create({
-        canvas: can,
-        engine: engine,
-        options: {
-            width: can.width,
-            height: can.height,
-            wireframes: false,
-            background: '#144f1000',
-            wireframeBackground: '#44151f',
-    }
-    });
-
-    Render.run(render);
-
-    // create runner
-    var runner = Runner.create();
-    Runner.run(runner, engine);
-}
 
 function newInter(this: any, canvasid: string){
+    if(!document) return
 var Engine = Matter.Engine,
     Render = Matter.Render,
     Runner = Matter.Runner,
@@ -114,16 +78,16 @@ var Engine = Matter.Engine,
 
     const sponsors = {
         github: {
-            url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-            color: "rgb(100, 0, 0)",
-            sides: 5,
+            url: "static/images/sponsors/cns.png",
+            color: "rgb(150, 255, 100)",
+            sides: 6,
             pos: {
                 x: 100,
                 y: 100,
             },
             size: 60,
             label: "ghub",
-            img: newimg("https://cdn-icons-png.flaticon.com/512/25/25231.png", 1)
+            img: newimg("static/images/sponsors/cns.png", 1)
         }
     }
     function newimg(url: string, size: number) {
@@ -200,4 +164,4 @@ var Engine = Matter.Engine,
     max: { x: width, y: height }
     });
 }
-export {newInter, interbeg}
+export {newInter}

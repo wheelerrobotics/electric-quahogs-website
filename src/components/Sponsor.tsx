@@ -14,7 +14,7 @@ function SideBar(props: {img: string, thanks: string} | any) {
                     <p style={{
                         fontSize: "10pt", 
                         lineHeight: "100%"
-                        }}>{props.ad ?? "Use our sponsor for your needs! You can find their business online somewhere!" + document.createElement('a')}</p>
+                        }}>{props.ad ?? "Use our sponsor for your needs! You can find their business online somewhere!"}</p>
             </div>
 }
 

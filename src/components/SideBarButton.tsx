@@ -5,11 +5,12 @@ function SideBarButton(props: {title: string, redirect: string, sameTab: boolean
         return <div className="sidebar_button">
                 <div className="sidebar_button_body" >
                     <button onClick={(e)=>{
-                        if(props.redirect == "news") {
+                        if(props.redirect == "news" && document) {
                             (document.getElementById('news_panel_div') as HTMLDivElement).hidden = false;
+                            (document.getElementById('news_panel_div')?.querySelector('div') as HTMLDivElement).hidden = false;
                             return
                         }
-                        if (props.sameTab) {
+                        if (props.sameTab && location && window) {
                             if(location) location.href = props.redirect
                         }else {
                             if(window != null) window.open(props.redirect)

@@ -37,9 +37,6 @@ body {
     background: linear-gradient(180deg, rgb(223, 209, 130) 70%, rgb(33, 0, 65) 90%);
     /* background-image: url("https://dj7ev245wrwsrpcps1m4o1ac-wpengine.netdna-ssl.com/wp-content/uploads/cache/thumbs_1920x1080/788_nod_gridbg_dark.jpg"); */
 }
-.page_area {
-    /* background-color: rgb(70, 70, 70); */
-}
 .page_body{
     display: flex;
     flex-direction: row;

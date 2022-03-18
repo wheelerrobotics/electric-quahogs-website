@@ -18,7 +18,6 @@ import SponsorBox from "../components/SponsorBox";
 import Sponsor from "../components/Sponsor";
 import SideBarButtonDrop from "../components/SideBarButtonDrop";
 import Matter from "matter-js";
-import {interbeg} from "../components/inter"
 // styles
 const pageStyles = {
   color: "rgb(100, 100, 100)",
@@ -67,8 +66,8 @@ const IndexPage = () => {
               <SideBar title="Loving the electric quahogs? Look over here!">
                   <SideBarButton title={"Latest News!"} redirect={"news"}></SideBarButton>
                   <SideBarButton title={"Our Github!"} redirect={"https://github.com/wheelerrobotics"}></SideBarButton>
-                  <SideBarButton title={"Our Github!"} redirect={"https://github.com/wheelerrobotics"}></SideBarButton>
-                  <SideBarButton title={"Our Github!"} redirect={"https://github.com/wheelerrobotics"}></SideBarButton>
+                  <SideBarButton title={"Sign Up!"} redirect={"https://docs.google.com/forms/d/e/1FAIpQLSdnxH2JlEnOVB2kW3c0EjCPh8TfeSSj3Itm8qfXFJKTSbQPfA/viewform"}></SideBarButton>
+                  <SideBarButton title={"Will Kopans!"} redirect={"https://www.linkedin.com/in/william-kopans"}></SideBarButton>
               </SideBar>
               <div className="posts_area">
                 <Post title={"Template"} subtitle={"Boilerplate"} date={"11/19/20"} img={"https://i.vimeocdn.com/video/1100868839-c27cae7588087e5630afd15af9590d256842a20bf742b4f0cf793b8e64ae3ac4-d?mw=1000&mh=563&q=70"}>
@@ -188,17 +187,18 @@ const IndexPage = () => {
                   </li>
                   <li>
                     <p>Next, select your donation amount.</p>
-                    <img src="static/images/step1.png"></img>
+                    <img src="static/images/step1.png" height={200}></img>
                   </li>
                   <li>
                     <p>After that, select <u><i>Robotics World Champion Sponsorship</i></u> as the destination.</p>
-                    <img src="static/images/step4.png"></img>
+                    <img src="static/images/step4.png" height={200}></img>
                   </li>
                   <li>
                     <p>Finally, secure your payment!</p>
                     <img src="static/images/step5.png"></img>
                   </li>
                 </ol>
+                <hr></hr>
                 <div>
                   <h2 style={{fontFamily: "Georgia"}}>If you would like, you can fill out this form to tell us why you donated and so that we can thank you!</h2>
                   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScan6HDMH5laWBZs8HrQ2481wpCBnC5ps6YhN_XwIybk4J88w/viewform?embedded=true" width="640" height="883" style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
@@ -219,9 +219,8 @@ const IndexPage = () => {
         </div>
         <div id="page_area">
           <TextBox title={"Our Portfolio"}>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScan6HDMH5laWBZs8HrQ2481wpCBnC5ps6YhN_XwIybk4J88w/viewform?embedded=true" width="640" height="883" style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
-            <p>im so mad, ive been trying to load a pdf for 2 hours and every time it fails the build because theres a native file that cant be processed in a library that is used in LITERALLY EVERY pdf viewer for react :(((((( I think maybe iframing a google drive pdf might be the best option {">"}:(
-              </p>
+            <iframe src="https://wheelerrobotics.github.io/Engineering%20Portfolio%202021-2022.pdf" width="640" height="883" style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
+            
           </TextBox>
 
         </div>
@@ -243,7 +242,7 @@ const IndexPage = () => {
       e.currentTarget.hidden = (getCookie('news') != news.cookie) ? false : true
       setCookie("news", news.cookie, 365)
     }}>
-        <Panel hidden={false} title={news.title} subtitle={news.subtitle} date={news.date} author={news.author} img={news.img} >
+        <Panel title={news.title} subtitle={news.subtitle} date={news.date} author={news.author} img={news.img} >
           {news.content}
         </Panel>
     </div>  

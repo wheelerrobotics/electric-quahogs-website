@@ -2,7 +2,6 @@ import * as React from "react"
 import "../css/panel_styles.css"
 import Post from "./Post"
 import { clearAllBodyScrollLocks } from 'body-scroll-lock';
-import { interbeg } from "./inter";
 
 function Panel(props: {title: string, subtitle: string, date: string, author: string, img: string} | any) {
         return <div hidden={props.hidden ? true : false} className="panel_backdrop" onKeyDown={(e)=>{e.currentTarget.hidden = (e.key == 'esc') || true}}>
