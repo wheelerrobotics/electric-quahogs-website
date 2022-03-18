@@ -19,21 +19,21 @@ import Sponsor from "../components/Sponsor";
 import SideBarButtonDrop from "../components/SideBarButtonDrop";
 import Matter from "matter-js";
 
-import willpic from "../images/Pictures/Team Photo/252 2022 Photos/Will.png"
-import maytepic from "../images/Pictures/Team Photo/252 2022 Photos/Mayte.png"
-import mylespic from "../images/Pictures/Team Photo/252 2022 Photos/Myles.png"
-import danielpic from "../images/Pictures/Team Photo/252 2022 Photos/Daniel.png"
-import henrypic from "../images/Pictures/Team Photo/252 2022 Photos/Henry.png"
-import beatricepic from "../images/Pictures/Team Photo/252 2022 Photos/Beatrice.png"
-import reedpic from "../images/Pictures/Team Photo/252 2022 Photos/Reed.png"
-import isabellepic from "../images/Pictures/Team Photo/252 2022 Photos/Isabelle.png"
-import jaidenpic from "../images/Pictures/Team Photo/252 2022 Photos/Jaiden.png"
-import lilypic from "../images/Pictures/Team Photo/252 2022 Photos/Lily.png"
-import tylerpic from "../images/Pictures/Team Photo/252 2022 Photos/Tyler.png"
-import seoyonpic from "../images/Pictures/Team Photo/252 2022 Photos/Seoyon.png"
-import griffinpic from "../images/Pictures/Team Photo/252 2022 Photos/Griffin.png"
-import sampic from "../images/Pictures/Team Photo/252 2022 Photos/Sam.png"
-import nathanpic from "../images/Pictures/Team Photo/252 2022 Photos/Nathan.png" // ahhhhh
+import willpic from "../images/Portraits/Will.jpg"
+import maytepic from "../images/Portraits/Mayte.jpg"
+import mylespic from "../images/Portraits/Myles.jpg"
+import danielpic from "../images/Portraits/Daniel.jpg"
+import henrypic from "../images/Portraits/Henry.jpg"
+import beatricepic from "../images/Portraits/Beatrice.jpg"
+import reedpic from "../images/Portraits/Reed.jpg"
+import isabellepic from "../images/Portraits/Isabelle.jpg"
+import jaidenpic from "../images/Portraits/Jaiden.jpg"
+import lilypic from "../images/Portraits/Lily.jpg"
+import tylerpic from "../images/Portraits/Tyler.jpg"
+import seoyonpic from "../images/Portraits/Seoyon.jpg"
+import griffinpic from "../images/Portraits/Griffin.jpg"
+import sampic from "../images/Portraits/Sam.jpg"
+import nathanpic from "../images/Portraits/Nathan.jpg" // ahhhhh
 
 import step1 from "../images/step1.png"
 import step2 from "../images/step2.png"
@@ -156,8 +156,8 @@ const IndexPage = () => {
 
           <div className="leader_area">
             <PeopleBox title={"Leadership"}>
-              <Leader name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a kopan!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Will.jpg"}></Leader>
-              <Leader name={"Mayte Segura"} grad_year={"2022"} email={"mayte.segura@wheelergmail.org"} bio={"She's a bird, she's a plane, she's mayte segura!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Mayte.jpg"}></Leader>
+              <Leader name={"William Kopans"} grad_year={"2022"} email={"william.kopans@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a kopan!"} img={willpic}></Leader>
+              <Leader name={"Mayte Segura"} grad_year={"2022"} email={"mayte.segura@wheelergmail.org"} bio={"She's a bird, she's a plane, she's mayte segura!"} img={maytepic}></Leader>
             </PeopleBox>
             </div>
             <div style={{
@@ -185,8 +185,8 @@ const IndexPage = () => {
                 <Normie name={"Griffin Haismann"} grad_year={"2025"} email={"griffin.haismann@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a griffin!"} img={griffinpic}></Normie>
                 <Normie name={"Seoyon Kim"} grad_year={"2025"} email={"seoyon.kim@wheelergmail.org"} bio={"She's a bird, she's a plane, she's seoyon kim!"} img={seoyonpic}></Normie>
                 <Normie name={"Isabelle Page"} grad_year={"2025"} email={"isabelle.idkherlastname@wheelergmail.org"} bio={"She's a bird, she's a plane, she's isabelle!"} img={isabellepic}></Normie>
-                {/* <Normie name={"Jackson Page"} grad_year={"2025"} email={"jackson.page@wheelergmail.org"} bio={"He's a bird, he's a plane, he's jackson page!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Jackson.jpg"}></Normie> */}
-                {/* <Normie name={"Charlie Shea"} grad_year={"2025"} email={"charlie.shea@wheelergmail.org"} bio={"He's a bird, he's a plane, he's charlie shea!"} img={"../../images/Pictures/Team Photo/252 2022 Photos/Charlie.jpg"}></Normie> */}
+                {/* <Normie name={"Jackson Page"} grad_year={"2025"} email={"jackson.page@wheelergmail.org"} bio={"He's a bird, he's a plane, he's jackson page!"} img={"../../images/Portraits/Jackson.jpg"}></Normie> */}
+                {/* <Normie name={"Charlie Shea"} grad_year={"2025"} email={"charlie.shea@wheelergmail.org"} bio={"He's a bird, he's a plane, he's charlie shea!"} img={"../../images/Portraits/Charlie.jpg"}></Normie> */}
                 <Normie name={"Sam Kurtis"} grad_year={"2022"} email={"sam.kurtis@wheelergmail.org"} bio={"He's a bird, he's a plane, he's sam kurtis!"} img={sampic}></Normie>
               </PeopleCarousel>
           </div>
