@@ -1,5 +1,5 @@
 import Matter, { Events } from "matter-js";
-
+import cn from "../images/sponsors/cns.png"
 
 function newInter(this: any, canvasid: string){
     if(!document) return
@@ -78,7 +78,7 @@ var Engine = Matter.Engine,
 
     const sponsors = {
         github: {
-            url: "static/images/sponsors/cns.png",
+            url: cn,
             color: "rgb(150, 255, 100)",
             sides: 6,
             pos: {
@@ -87,7 +87,7 @@ var Engine = Matter.Engine,
             },
             size: 60,
             label: "ghub",
-            img: newimg("static/images/sponsors/cns.png", 1)
+            img: newimg(cn, 1)
         }
     }
     function newimg(url: string, size: number) {
