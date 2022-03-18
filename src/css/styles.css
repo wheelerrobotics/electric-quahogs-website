@@ -1,7 +1,3 @@
-
-
-
-
 .universal {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -54,7 +50,7 @@ body {
     margin-top: 10%;
     margin-bottom: -5%;
     margin-inline: 5%;
-    color: purple;
+    color: #4d007a;
     font-family: Georgia, 'Times New Roman', Times, serif;
     align-items: center;
     text-align: center;

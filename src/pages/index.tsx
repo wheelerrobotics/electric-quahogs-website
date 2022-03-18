@@ -35,6 +35,9 @@ import griffinpic from "../images/Portraits/Griffin.jpg"
 import sampic from "../images/Portraits/Sam.jpg"
 import nathanpic from "../images/Portraits/Nathan.jpg" // ahhhhh
 
+import logo from "../favicon/logotrans.png"
+import logofull from "../favicon/logofulltrans.png"
+
 import step1 from "../images/step1.png"
 import step2 from "../images/step2.png"
 import step3 from "../images/step3.png"
@@ -62,15 +65,19 @@ const links = [
 
 // markup
 const IndexPage = () => {
+  const newLocal = this;
   return (
 
   <main>
     <span className="universal">
+      
+      <meta name="icon" href={logo}/>
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossOrigin="anonymous"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossOrigin="anonymous"></link>
       <script src="https://kit.fontawesome.com/64919bd2ce.js" crossOrigin="anonymous"></script>
-      <title>wheelerrobotics!</title>
+      <title>Electric Quahogs!</title>
+      
       <Navi>
         <NaviButton title={"Home"} refer={"home"} img={"fa fa-home"} icn={""}></NaviButton>
         <NaviButton title={"About Us"} refer={"about"} img={"fa fa-users"} icn={""}></NaviButton>
@@ -82,7 +89,7 @@ const IndexPage = () => {
         <div id="home">
           <div className="page_area">
             <div className="title_area">
-              <h1>Logo goes here!</h1>
+              <h1><img src={logo} height={200} style={{marginBottom: "2%"}}></img>Electric Quahogs!</h1>
             </div>
             <div className="page_body">
 
