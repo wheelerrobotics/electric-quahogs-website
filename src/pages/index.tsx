@@ -43,6 +43,7 @@ import step2 from "../images/step2.png"
 import step3 from "../images/step3.png"
 import step4 from "../images/step4.png"
 import step5 from "../images/step5.png"
+import Helm from "../components/Hemlet";
 
 // styles
 const pageStyles = {
@@ -69,14 +70,14 @@ const IndexPage = () => {
   return (
 
   <main>
-    <span className="universal">
+    <Helm></Helm>
       
-      <meta name="icon" href={logo}/>
+      
+      {/* <meta name="icon" href={logo}/> */}
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossOrigin="anonymous"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossOrigin="anonymous"></link>
       <script src="https://kit.fontawesome.com/64919bd2ce.js" crossOrigin="anonymous"></script>
-      <title>Electric Quahogs!</title>
       
       <Navi>
         <NaviButton title={"Home"} refer={"home"} img={"fa fa-home"} icn={""}></NaviButton>
@@ -276,7 +277,6 @@ const IndexPage = () => {
           {news.content}
         </Panel>
     </div>  
-    </span>
 
 
     </main>

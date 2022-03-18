@@ -57,20 +57,23 @@ var Engine = Matter.Engine,
     switch (Math.round(Common.random(0, 1))) {
     case 0:
         if (Common.random() < 0.8) {
+            let kicker = Math.random()*100;
             return Bodies.rectangle(x, y, Common.random(25, 50), Common.random(25, 50) , { 
                 render: {
-                    fillStyle: `rgb(${Math.random()*155 + 100}, ${Math.random()*155 + 100}, ${Math.random()*105})`
+                    fillStyle: `rgb(${kicker+222}, ${kicker + 157}, ${kicker + 27})`
         } } );
         } else {
+            let kicker = Math.random()*50;
             return Bodies.rectangle(x, y, Common.random(80, 120), Common.random(25, 30),{ 
                 render: {
-                    fillStyle: `rgb(${Math.random()*155 + 100}, ${Math.random()*155 + 100}, ${Math.random()*105})`
+                    fillStyle: `rgb(${kicker + 222}, ${kicker + 157}, ${kicker + 27})`
         } });
         }
     case 1:
+        let kicker = Math.random()*50;
         return Bodies.polygon(x, y, sides, Common.random(25, 50), { 
             render: {
-                fillStyle: `rgb(${Math.random()*155 + 100}, ${Math.random()*155 + 100}, ${Math.random()*105})`
+                fillStyle: `rgb(${kicker + 222}, ${kicker + 157}, ${kicker + 27})`
     } });
     }
     });
