@@ -1,49 +1,12 @@
 import * as React from "react"
 import "../css/styles.css"
 import "../css/mobile/m_styles.css"
-import NaviButton from "../components/NaviButton";
-import Navi from "../components/Navi";
-import Post from "../components/Post";
-import Leader from "../components/Leader";
-import PeopleBox from "../components/PeopleBox";
-import PeopleCarousel from "../components/PeopleCarousel";
-import TextBox from "../components/TextBox";
-import { Normie, select } from "../components/Normie";
-import Panel from "../components/Panel";
 import "../helpers/inter.ts";
-import {newInter} from "../helpers/inter";
-import Interactive from "../components/InteractiveBackground";
-import SideBar from "../components/SideBar";
-import SideBarButton from "../components/SideBarButton";
-import SponsorBox from "../components/SponsorBox";
-import Sponsor from "../components/Sponsor";
-import SideBarButtonDrop from "../components/SideBarButtonDrop";
-import Matter from "matter-js";
-
-import willpic from "../images/Portraits/Will.jpg"
-import maytepic from "../images/Portraits/Mayte.jpg"
-import mylespic from "../images/Portraits/Myles.jpg"
-import danielpic from "../images/Portraits/Daniel.jpg"
-import henrypic from "../images/Portraits/Henry.jpg"
-import beatricepic from "../images/Portraits/Beatrice.jpg"
-import reedpic from "../images/Portraits/Reed.jpg"
-import isabellepic from "../images/Portraits/Isabelle.jpg"
-import jaidenpic from "../images/Portraits/Jaiden.jpg"
-import lilypic from "../images/Portraits/Lily.jpg"
-import tylerpic from "../images/Portraits/Tyler.jpg"
-import seoyonpic from "../images/Portraits/Seoyon.jpg"
-import griffinpic from "../images/Portraits/Griffin.jpg"
-import sampic from "../images/Portraits/Sam.jpg"
-import nathanpic from "../images/Portraits/Nathan.jpg" // ahahahahaha
 
 import logo from "../favicon/logotrans.png"
 import logofull from "../favicon/logofulltrans.png"
 
-import step1 from "../images/step1.png"
-import step2 from "../images/step2.png"
-import step3 from "../images/step3.png"
-import step4 from "../images/step4.png"
-import step5 from "../images/step5.png"
+import Seo from "../components/SEYO"
 import Helm from "../components/Hemlet";
 import PostArea from "../segments/PostsSegment";
 import statesimg from '../images/stateswin.jpg'
@@ -59,6 +22,7 @@ import SideMenuSegment from "../segments/SideMenuSegment";
 import PortfolioSegment from "../segments/PortfolioSegment";
 import isBrowser from "../helpers/isBrowser";
 import NavBarSegment from "../segments/NavBarSegment";
+import { Helmet } from "react-helmet";
 
 // styles
 const pageStyles = {
@@ -89,8 +53,19 @@ const IndexPage = () => {
 
   <main>
     <Helm></Helm>
-      
-      
+      <Seo></Seo>
+      <Helmet>
+  <script type="application/ld+json">
+    {`
+        {
+          "@context": "https://electricquahogs.gatsbyjs.io",
+          "@type": "Wheeler Robotics",
+          "url": "https://electricquahogs.gatsbyjs.io",
+          "name": "Electric Quahogs",
+        }
+      `}
+  </script>
+</Helmet>
       {/* <meta name="icon" href={logo}/> */}
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossOrigin="anonymous"></link>

@@ -2,6 +2,7 @@
 module.exports = {
   siteMetadata: {
       title: "The Electric Quahogs",
+      author: "Daniel Duarte-Baird",
       titleTemplate: "%s · FTC Team #252",
       description:
         "We are the Electric Quahogs, FTC team #252 from the Wheeler School, this is our website!",
