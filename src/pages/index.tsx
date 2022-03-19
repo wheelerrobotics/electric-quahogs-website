@@ -57,6 +57,7 @@ import LeadershipSegment from "../segments/LeadershipSegment";
 import SponsorSegment from "../segments/SponsorSegment";
 import PostsSegment from "../segments/PostsSegment";
 import SideMenuSegment from "../segments/SideMenuSegment";
+import PortfolioSegment from "../segments/PortfolioSegment";
 
 // styles
 const pageStyles = {
@@ -72,7 +73,9 @@ const news = {
   cookie: "winstates"
 }
 function mobileCheck() {
-  if(window) if(window.innerWidth < 600) location.href = '/m_index';
+  if(window) {
+    if(window.innerWidth < 600) location.href = '/m_index'
+  }
 }
 
 // data
@@ -140,7 +143,7 @@ const IndexPage = () => {
           <h1>What We Have Done</h1>
         </div>
         <div id="page_area">
-          <AboutSegment></AboutSegment>
+          <PortfolioSegment></PortfolioSegment>
 
         </div>
       </div>
