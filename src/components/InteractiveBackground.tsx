@@ -4,8 +4,7 @@
 import Matter from "matter-js";
 import "../css/people_styles.css"
 import "../css/mobile/m_people_styles.css"
-import "./inter"
-import {newInter} from "./inter"
+import {newInter} from "../helpers/inter"
 import React, { useState } from "react";
 
 function Interactive(props: {id: string, parent: HTMLElement} | any) {

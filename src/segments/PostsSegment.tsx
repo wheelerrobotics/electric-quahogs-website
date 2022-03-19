@@ -2,7 +2,7 @@ import * as React from "react"
 import Post from "../components/Post"
 import statesimg from '../images/stateswin.jpg'
 
-function PostArea() {
+function PostsSegment() {
         return <div className="posts_area">
             <Post title={"Electric Quahogs Win States!"} subtitle={""} author={"daniel duarte-baird"} date={"3/5/22"} img={statesimg}>
             Over the past few months, the electric quahogs have been working hard designing, building, and programming a robot to compete in the FIRST® Tech Challenge Robotics Competiton. 
@@ -96,4 +96,4 @@ function PostArea() {
       </div>
 }
 
-export default PostArea
+export default PostsSegment

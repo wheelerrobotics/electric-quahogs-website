@@ -1,1 +1,2 @@
 does the logo look better above or to the left of the title text?
+should the panel/panel text be bigger on desktop?
