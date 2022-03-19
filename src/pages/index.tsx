@@ -1,4 +1,3 @@
-window ? mobileCheck() : null;
 import * as React from "react"
 import "../css/styles.css"
 import "../css/mobile/m_styles.css"

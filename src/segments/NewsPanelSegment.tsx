@@ -1,7 +1,7 @@
 import * as React from "react"
 import Panel from "../components/Panel"
 import statesimg from '../images/stateswin.jpg'
-
+import {getCookie, setCookie} from '../helpers/cookieHelper'
 
 const news = {
     title: "BREAKING NEWS",
