@@ -58,6 +58,7 @@ import PostsSegment from "../segments/PostsSegment";
 import SideMenuSegment from "../segments/SideMenuSegment";
 import PortfolioSegment from "../segments/PortfolioSegment";
 import isBrowser from "../helpers/isBrowser";
+import NavBarSegment from "../segments/NavBarSegment";
 
 // styles
 const pageStyles = {
@@ -96,12 +97,7 @@ const IndexPage = () => {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossOrigin="anonymous"></link>
       <script src="https://kit.fontawesome.com/64919bd2ce.js" crossOrigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossOrigin="anonymous"></link>
-      <Navi>
-        <NaviButton title={"Home"} refer={"home"} img={"fa fa-home"} icn={""}></NaviButton>
-        <NaviButton title={"About Us"} refer={"about"} img={"fa fa-users"} icn={""}></NaviButton>
-        <NaviButton title={"Our Work"} refer={"work"} img={"fa fa-comment"} icn={""}></NaviButton>
-        <NaviButton title={"Give"} refer={"give"} img={"fa fa-heart"} icn={""}></NaviButton>
-      </Navi>
+      <NavBarSegment></NavBarSegment>
       <div id="pages" >
         
         <div id="home">

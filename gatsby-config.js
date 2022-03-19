@@ -1,8 +1,13 @@
 /** @type {import('gatsby').GatsbyConfig} */
 module.exports = {
   siteMetadata: {
-      title: `Electric Quahogs`,
-    siteUrl: `https://www.yourdomain.tld`
+      title: "The Electric Quahogs",
+      titleTemplate: "%s · FTC Team #252",
+      description:
+        "We are the Electric Quahogs, FTC team #252 from the Wheeler School, this is our website!",
+      url: "https://electricquahogs.gatsbyjs.io", // No trailing slash allowed!
+      image: "/seoimg.png", // Path to the image placed in the 'static' folder, in the project's root directory.
+      twitterUsername: "@electricquahogs", // i dont think we have a twitter :/
   },
   plugins: [
     "gatsby-plugin-postcss",
