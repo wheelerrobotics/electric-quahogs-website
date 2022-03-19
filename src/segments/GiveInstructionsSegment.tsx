@@ -1,5 +1,6 @@
 import * as React from "react"
 import TextBox from "../components/TextBox"
+import isBrowser from "../helpers/isBrowser"
 import step1 from "../images/step1.png"
 import step2 from "../images/step2.png"
 import step3 from "../images/step3.png"
@@ -18,19 +19,19 @@ function GiveInstructionsSegment() {
             </li>
             <li>
               <p>Then click "Make A Gift"</p>
-              <img src={step2} height={window ? (window.innerWidth > 600) ? 200 : "" : "" } width={window ? (window.innerWidth > 600) ? "" : 200 : ""}></img>
+              <img src={step2} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 200 : ""}></img>
             </li>
             <li>
               <p>Next, select your donation amount.</p>
-              <img src={step1} height={window ? (window.innerWidth > 600) ? 200 : "" : "" } width={window ? (window.innerWidth > 600) ? "" : 260 : ""}></img>
+              <img src={step1} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 260 : ""}></img>
             </li>
             <li>
               <p>After that, select <u><i>Robotics World Champion Sponsorship</i></u> as the designation.</p>
-              <img src={step4} height={window ? (window.innerWidth > 600) ? 200 : "" : "" } width={window ? (window.innerWidth > 600) ? "" : 270 : ""}></img>
+              <img src={step4} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 270 : ""}></img>
             </li>
             <li>
               <p>Finally, secure your payment!</p>
-              <img src={step5} height={window ? (window.innerWidth > 600) ? 200 : "" : "" } width={window ? (window.innerWidth > 600) ? "" : 220 : ""}></img>
+              <img src={step5} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 220 : ""}></img>
             </li>
           </ol>
           <hr></hr>

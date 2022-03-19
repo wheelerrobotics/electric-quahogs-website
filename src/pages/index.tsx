@@ -57,6 +57,7 @@ import SponsorSegment from "../segments/SponsorSegment";
 import PostsSegment from "../segments/PostsSegment";
 import SideMenuSegment from "../segments/SideMenuSegment";
 import PortfolioSegment from "../segments/PortfolioSegment";
+import isBrowser from "../helpers/isBrowser";
 
 // styles
 const pageStyles = {
@@ -82,7 +83,7 @@ const links = [
 
 // markup
 const IndexPage = () => {
-  window ? mobileCheck() : null;
+  isBrowser() ? mobileCheck() : null;
   return (
 
   <main>
@@ -106,7 +107,7 @@ const IndexPage = () => {
         <div id="home">
           <div className="page_area">
             <div className="title_area">
-              <img src={window ? window.innerWidth < 600 ? logofull : logo : logofull} height={200} style={{marginBottom: "2%"}}></img><h1 hidden={window ? window.innerWidth < 600 ? true : false : false}>Electric Quahogs!</h1>
+              <img src={isBrowser() ? window.innerWidth < 600 ? logofull : logo : logofull} height={200} style={{marginBottom: "2%"}}></img><h1 hidden={isBrowser() ? window.innerWidth < 600 ? true : false : false}>Electric Quahogs!</h1>
             </div>
             <div className="page_body">
 

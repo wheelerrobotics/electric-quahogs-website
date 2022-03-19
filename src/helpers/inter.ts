@@ -1,5 +1,6 @@
 import Matter, { Events } from "matter-js";
 import cn from "../images/sponsors/cns.png"
+import isBrowser from "./isBrowser";
 
 function newInter(this: any, canvasid: string){
     if(!document) return
@@ -53,10 +54,10 @@ var Engine = Matter.Engine,
     // add bodies
     var stack = Composites.stack(20, 20, 10, 5, 0, 0, function(x: number, y: number) {
     var sides = Math.round(Common.random(1, 8));
-        const smrl = window ?  (window.innerWidth > 600) ? 25 : 10 : 25
-        const smrh = window ?  (window.innerWidth > 600) ? 50 : 25 : 50
-        const birl = window ?  (window.innerWidth > 600) ? 80 : 50  : 80
-        const birh = window ?  (window.innerWidth > 600) ? 120 : 70 : 120
+        const smrl = isBrowser() ?  (window.innerWidth > 600) ? 25 : 10 : 25
+        const smrh = isBrowser() ?  (window.innerWidth > 600) ? 50 : 25 : 50
+        const birl = isBrowser() ?  (window.innerWidth > 600) ? 80 : 50  : 80
+        const birh = isBrowser() ?  (window.innerWidth > 600) ? 120 : 70 : 120
     
     switch (Math.round(Common.random(0, 1))) {
     case 0:
@@ -92,7 +93,7 @@ var Engine = Matter.Engine,
                 x: 100,
                 y: 100,
             },
-            size: window ? (window.innerWidth > 600) ? 60 : 40 : 40,
+            size: isBrowser() ? (window.innerWidth > 600) ? 60 : 40 : 40,
             label: "ghub",
             img: newimg(cn, 1)
         }
