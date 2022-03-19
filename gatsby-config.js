@@ -13,8 +13,15 @@ module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
     `gatsby-plugin-gatsby-cloud`,
-    'gatsby-plugin-robots-txt',
-    "gatsby-plugin-react-helmet",
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://electricquahogs.gatsbyjs.io',
+        //sitemap: 'https://electricquahogs.gatsbyjs.io/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
+      "gatsby-plugin-react-helmet",
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
