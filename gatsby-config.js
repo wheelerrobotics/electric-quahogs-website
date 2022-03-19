@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
     `gatsby-plugin-gatsby-cloud`,
+    'gatsby-plugin-robots-txt',
     "gatsby-plugin-react-helmet",
     {
       resolve: 'gatsby-plugin-manifest',
