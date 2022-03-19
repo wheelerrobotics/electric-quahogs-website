@@ -36,7 +36,7 @@ function GiveInstructionsSegment() {
           </ol>
           <hr></hr>
           <div>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScan6HDMH5laWBZs8HrQ2481wpCBnC5ps6YhN_XwIybk4J88w/viewform?embedded=true" width="300" height="900" style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScan6HDMH5laWBZs8HrQ2481wpCBnC5ps6YhN_XwIybk4J88w/viewform?embedded=true" height={900} width={isBrowser() ? (window.innerWidth > 600) ? 800 : 300 : ""} style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
           </div>
 
         </div>
