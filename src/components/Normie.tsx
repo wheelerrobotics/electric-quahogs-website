@@ -1,5 +1,6 @@
 import * as React from "react"
 import "../css/people_styles.css"
+import "../css/mobile/m_people_styles.css"
 
 function Normie(props: {name: string, grad_year: string, email: string, bio: string, img: string } | any) {
         return <div className="normie" >

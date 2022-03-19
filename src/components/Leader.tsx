@@ -1,6 +1,7 @@
 
 import * as React from "react"
 import "../css/people_styles.css"
+import "../css/mobile/m_people_styles.css"
 
 function Leader(props: {name: string, grad_year: string, email: string, bio: string, img: string }) {
         return <div className="person">

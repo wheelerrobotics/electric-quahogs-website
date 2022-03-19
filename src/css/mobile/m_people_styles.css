@@ -1,3 +1,4 @@
+@media only screen and (max-width: 600px) {
 .person > p{
     margin-block: 0%;
 }
@@ -7,7 +8,8 @@
 }
 .person_img {
     border-radius: 50%;
-    height: 80%;
+    width: 140px;
+    height: 140px;
     transition: 300ms;
 }
 .person_name {
@@ -26,17 +28,20 @@
 .person_bio {
     font-size: medium;
     color: rgb(107, 107, 107);
+    word-wrap: break-word;
+    white-space:pre-wrap;
 }
 .people_box {
     display: flex;
-    flex-direction: row;
-    width: 200%;
+    flex-direction: column;
+    width: 100%;
 }
 .people_header > h1 {
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0%;
-    width: 50%;
+    width: 80%;
+    white-space: pre;
 }
 .people_slider {
     display: flex;
@@ -123,3 +128,4 @@
               box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
   }
+}

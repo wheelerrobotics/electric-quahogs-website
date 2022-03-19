@@ -3,6 +3,7 @@
 
 import Matter from "matter-js";
 import "../css/people_styles.css"
+import "../css/mobile/m_people_styles.css"
 import "./inter"
 import {newInter} from "./inter"
 import React, { useState } from "react";

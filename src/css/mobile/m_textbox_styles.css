@@ -1,0 +1,121 @@
+@media only screen and (max-width: 600px) {
+.textbox {
+    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-inline: 5%;
+    background-color: rgb(194, 194, 194);
+    outline: 2px gray solid;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+.textbox_header > h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.textbox_body > * {
+    margin-right: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sidebar {
+    /* margin-top: 50%; */
+    position: relative;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: -1%;
+    width: 300%;
+    background-color: rgb(194, 194, 194);
+    outline: 2px gray solid;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+.sidebar_header > * {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.sidebar_header {
+    padding: 2%;
+}
+.sidebar_body {
+    width: 100%;
+}
+.sidebar_footer {
+    height: 40%;
+}
+.sponsorbox {
+    margin-top: 50px;
+    margin-bottom: 0%;
+    margin-right: 0%;
+    float: right;
+    width: 60%;
+    background-color: rgb(194, 194, 194);
+    outline: 2px gray solid;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+.sidebar_button {
+    width: 100%;
+    margin-top: -1%;
+    margin-left: 2%;
+    height: 50px;
+    padding: 0%;
+}
+.sidebar_button_body {
+    overflow:hidden;
+}
+.sidebar_button_body > button{
+    width: 85%;
+    /* border: solid black 2px; */
+    padding: 5%;
+    margin: none;
+    text-align: left;
+    font-size: large;
+    transition: 400ms;
+    background-color: rgb(167, 167, 167);
+}
+.sidebar_button_body > button:hover{
+    background-color: rgb(212, 212, 212);
+    width: 95%;
+    transition: 400ms;
+}
+
+
+
+.sidebar_button_drop {
+    width: 100%;
+    border: solid black 2px;
+    height: 50px;
+    padding: 0%;
+}
+
+.sidebar_button_drop_body > button {
+    width: 100%;
+    padding: 5%;
+    height: 90%;
+    border: none;
+    margin: none;
+    text-align: left;
+    font-size: large;
+    transition: 400ms;
+    background-color: gray;
+}
+.sidebar_button_drop_body > button:hover {
+    background-color: darkgray;
+    transition: 400ms;
+}
+.sidebar_button_drop_body > button:hover .sidebar_button_drop_content > .sidebar_button > .sidebar_button_body > button {
+    opacity: 0;
+}
+.sidebar_button_drop_content {
+    opacity: 1;
+    display: block;
+}
+}
+

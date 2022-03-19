@@ -1,6 +1,7 @@
 
 import * as React from "react"
 import "../css/navi_styles.css"
+import "../css/mobile/m_navi_styles.css"
 const img_size = 10;
 function NaviButton(props: { title: string, refer: string, img: string, icn: string }) {
         return <button className="navi_button" onClick={() => {

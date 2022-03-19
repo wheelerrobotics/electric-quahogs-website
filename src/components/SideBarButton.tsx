@@ -1,5 +1,6 @@
 import * as React from "react"
 import "../css/textbox_styles.css"
+import "../css/mobile/m_textbox_styles.css"
 
 function SideBarButton(props: {title: string, redirect: string, sameTab: boolean } | any) {
         return <div className="sidebar_button">

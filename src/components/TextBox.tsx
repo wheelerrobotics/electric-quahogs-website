@@ -1,6 +1,7 @@
 
 import * as React from "react"
 import "../css/textbox_styles.css"
+import "../css/mobile/m_textbox_styles.css"
 
 function TextBox(props: {title: string, width:number, right: number, left: number} | any) {
         return <div style={{

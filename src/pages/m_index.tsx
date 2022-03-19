@@ -1,4 +1,3 @@
-mobileCheck()
 import * as React from "react"
 import "../css/styles.css"
 import "../css/mobile/m_styles.css"
@@ -61,9 +60,6 @@ const news = {
   content: "the quahogs have won stats, this means theyre going to worlds",
   cookie: "winstates"
 }
-function mobileCheck() {
-  if(window.innerWidth < 600) location.href = '/m_index';
-}
 
 // data
 const links = [
@@ -72,7 +68,7 @@ const links = [
 
 // markup
 const IndexPage = () => {
-  mobileCheck()
+  const newLocal = this;
   return (
 
   <main>
@@ -96,20 +92,40 @@ const IndexPage = () => {
         <div id="home">
           <div className="page_area">
             <div className="title_area">
-              <img src={window.innerWidth < 600 ? logofull : logo} height={200} style={{marginBottom: "2%"}}></img><h1 hidden={window.innerWidth < 600}>Electric Quahogs!</h1>
+              <img src={logofull} height={200} style={{marginBottom: "2%"}}></img><h1 hidden={window.innerWidth < 600}>Electric Quahogs!</h1>
             </div>
             <div className="page_body">
-
-              <SideBar title="Loving the electric quahogs? Look over here!">
-                  <SideBarButton title={"Latest News!"} redirect={"news"}></SideBarButton>
-                  <SideBarButton title={"Our Github!"} redirect={"https://github.com/wheelerrobotics"}></SideBarButton>
-                  <SideBarButton title={"Sign Up!"} redirect={"https://docs.google.com/forms/d/e/1FAIpQLSdnxH2JlEnOVB2kW3c0EjCPh8TfeSSj3Itm8qfXFJKTSbQPfA/viewform"}></SideBarButton>
-                  <SideBarButton title={"Will Kopans!"} redirect={"https://www.linkedin.com/in/william-kopans"}></SideBarButton>
-              </SideBar>
+            <div style={{position: "absolute", float: 'right', right:'0px', display: 'flex', flexDirection: "column"}}>
+                <button style={{width: '100px', height: '40px', float: 'right',position: "absolute", right:'0px', backgroundColor: 'darkgray'}} onClick={(e)=>{
+                  e!.currentTarget!.parentElement!.querySelector('span')!.hidden = !e!.currentTarget!.parentElement!.querySelector('span')!.hidden;
+                  e.currentTarget.style.backgroundColor = e.currentTarget.style.backgroundColor == 'gray' ? 'darkgray' : 'gray';
+                  //e.currentTarget.innerHTML[e.currentTarget.innerHTML.length-1] = e.currentTarget.innerHTML[e.currentTarget.innerHTML.length-1] == '\u02C3' ? '\u02C5' : '\u02C3';
+                  
+                }}>sponsors!</button>
+                <span hidden>
+                  <SponsorBox>
+                    <Sponsor img={"https://cdn-icons-png.flaticon.com/512/25/25231.png"}></Sponsor>
+                </SponsorBox>
+                </span>
+              </div>
+              <div style={{position: "absolute", display: 'flex', flexDirection: "column"}}>
+                <button style={{width: '100px', height: '40px', backgroundColor: 'darkgray'}} onClick={(e)=>{
+                  e!.currentTarget!.parentElement!.querySelector('span')!.hidden = !e!.currentTarget!.parentElement!.querySelector('span')!.hidden;
+                  e.currentTarget.style.backgroundColor = e.currentTarget.style.backgroundColor == 'gray' ? 'darkgray' : 'gray';
+                  //e.currentTarget.innerHTML[e.currentTarget.innerHTML.length-1] = e.currentTarget.innerHTML[e.currentTarget.innerHTML.length-1] == '\u02C3' ? '\u02C5' : '\u02C3';
+                  
+                }}>more!</button>
+                <span hidden>
+                <SideBar title="">
+                    <SideBarButton title={"Latest News!"} redirect={"news"}></SideBarButton>
+                    <SideBarButton title={"Our Github!"} redirect={"https://github.com/wheelerrobotics"}></SideBarButton>
+                    <SideBarButton title={"Sign Up!"} redirect={"https://docs.google.com/forms/d/e/1FAIpQLSdnxH2JlEnOVB2kW3c0EjCPh8TfeSSj3Itm8qfXFJKTSbQPfA/viewform"}></SideBarButton>
+                    <SideBarButton title={"Will Kopans!"} redirect={"https://www.linkedin.com/in/william-kopans"}></SideBarButton>
+                </SideBar>
+                </span>
+              </div>
               <PostArea></PostArea>
-              <SponsorBox>
-                <Sponsor img={"https://cdn-icons-png.flaticon.com/512/25/25231.png"}></Sponsor>
-              </SponsorBox>
+              
             </div>
           </div>
         </div>
@@ -171,25 +187,24 @@ const IndexPage = () => {
                   </li>
                   <li>
                     <p>Then click "Make A Gift"</p>
-                    <img src={step2}></img>
+                    <img src={step2} width={200}></img>
                   </li>
                   <li>
                     <p>Next, select your donation amount.</p>
-                    <img src={step1} height={200}></img>
+                    <img src={step1} width={260}></img>
                   </li>
                   <li>
                     <p>After that, select <u><i>Robotics World Champion Sponsorship</i></u> as the designation.</p>
-                    <img src={step4} height={200}></img>
+                    <img src={step4} width={270}></img>
                   </li>
                   <li>
                     <p>Finally, secure your payment!</p>
-                    <img src={step5}></img>
+                    <img src={step5} width={220}></img>
                   </li>
                 </ol>
                 <hr></hr>
                 <div>
-                  <h2 style={{fontFamily: "Georgia"}}>If you would like, you can fill out this form to tell us why you donated and so that we can thank you!</h2>
-                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScan6HDMH5laWBZs8HrQ2481wpCBnC5ps6YhN_XwIybk4J88w/viewform?embedded=true" width="640" height="883" style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScan6HDMH5laWBZs8HrQ2481wpCBnC5ps6YhN_XwIybk4J88w/viewform?embedded=true" width="300" height="900" style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
                 </div>
 
               </div>
@@ -207,7 +222,7 @@ const IndexPage = () => {
         </div>
         <div id="page_area">
           <TextBox title={"Our Portfolio"}>
-            <iframe src="https://wheelerrobotics.github.io/Engineering%20Portfolio%202021-2022.pdf" width="640" height="883" style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
+            <iframe src="https://wheelerrobotics.github.io/Engineering%20Portfolio%202021-2022.pdf" height={500} style={{overflow: "hidden"}} frameBorder="0">Loading…</iframe>
             
           </TextBox>
 

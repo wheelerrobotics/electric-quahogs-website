@@ -1,6 +1,7 @@
 
 import * as React from "react"
 import "../css/people_styles.css"
+import "../css/mobile/m_people_styles.css"
 
 function PeopleBox(props: {title: string} | any) {
         return <div className="">

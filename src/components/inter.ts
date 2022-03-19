@@ -54,24 +54,29 @@ var Engine = Matter.Engine,
     var stack = Composites.stack(20, 20, 10, 5, 0, 0, function(x: number, y: number) {
     var sides = Math.round(Common.random(1, 8));
     
+    const smrl = (window.innerWidth > 600) ? 25 : 10
+    const smrh = (window.innerWidth > 600) ? 50 : 25
+    const birl = (window.innerWidth > 600) ? 80 : 50
+    const birh = (window.innerWidth > 600) ? 120 : 70
+
     switch (Math.round(Common.random(0, 1))) {
     case 0:
         if (Common.random() < 0.8) {
             let kicker = Math.random()*100;
-            return Bodies.rectangle(x, y, Common.random(25, 50), Common.random(25, 50) , { 
+            return Bodies.rectangle(x, y, Common.random(smrl, smrh), Common.random(smrl, smrh) , { 
                 render: {
                     fillStyle: `rgb(${kicker+222}, ${kicker + 157}, ${kicker + 27})`
         } } );
         } else {
             let kicker = Math.random()*50;
-            return Bodies.rectangle(x, y, Common.random(80, 120), Common.random(25, 30),{ 
+            return Bodies.rectangle(x, y, Common.random(birl, birh), Common.random(smrl, smrh),{ 
                 render: {
                     fillStyle: `rgb(${kicker + 222}, ${kicker + 157}, ${kicker + 27})`
         } });
         }
     case 1:
         let kicker = Math.random()*50;
-        return Bodies.polygon(x, y, sides, Common.random(25, 50), { 
+        return Bodies.polygon(x, y, sides, Common.random(smrl, smrh), { 
             render: {
                 fillStyle: `rgb(${kicker + 222}, ${kicker + 157}, ${kicker + 27})`
     } });
@@ -88,7 +93,7 @@ var Engine = Matter.Engine,
                 x: 100,
                 y: 100,
             },
-            size: 60,
+            size: (window.innerWidth > 600) ? 60 : 40,
             label: "ghub",
             img: newimg(cn, 1)
         }
