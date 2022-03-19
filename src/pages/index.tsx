@@ -1,4 +1,4 @@
-mobileCheck()
+window ? mobileCheck() : null;
 import * as React from "react"
 import "../css/styles.css"
 import "../css/mobile/m_styles.css"
@@ -73,9 +73,7 @@ const news = {
   cookie: "winstates"
 }
 function mobileCheck() {
-  if(window) {
-    if(window.innerWidth < 600) location.href = '/m_index'
-  }
+  if(window.innerWidth < 600) location.href = '/m_index';
 }
 
 // data
@@ -85,7 +83,7 @@ const links = [
 
 // markup
 const IndexPage = () => {
-  mobileCheck()
+  window ? mobileCheck() : null;
   return (
 
   <main>
