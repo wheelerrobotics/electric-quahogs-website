@@ -68,7 +68,7 @@ const IndexPage = () => {
         <div id="home">
           <div className="page_area">
             <div className="title_area">
-              <img src={logofull} height={200} style={{marginBottom: "2%"}}></img><h1 hidden={window ? window.innerWidth < 600 ? true : false : false}>Electric Quahogs!</h1>
+              <img src={logofull} height={200} style={{marginBottom: "2%"}}></img>
             </div>
             <div className="page_body">
             <div style={{position: "absolute", float: 'right', right:'0px', display: 'flex', flexDirection: "column"}}>
