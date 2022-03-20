@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 
 const query = graphql`
@@ -59,6 +59,7 @@ function Helm ({ title, description, image, article }: any){
         {seo.image && <meta name="twitter:image" content={seo.image} />}
           <meta charSet="utf-8" />
           <title>Electric Quahogs!</title>
+          <GatsbySeo noindex={false}></GatsbySeo>
         </Helmet>
       </div>
     )
