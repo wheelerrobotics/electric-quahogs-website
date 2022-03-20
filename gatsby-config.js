@@ -10,6 +10,7 @@ module.exports = {
         siteUrl: "https://electricquahogs.gatsbyjs.io",
         image: "/seoimg.png", // Path to the image placed in the 'static' folder, in the project's root directory.
         twitterUsername: "@electricquahogs", // i dont think we have a twitter :/
+        keywords: ["252", "electric", "quahogs", "wheeler", "robotics", "first", "tech", "challenge", "FTC", "team", "highschool", "upperschool", "school"],
     },
     plugins: [
       `gatsby-plugin-gatsby-cloud`,
