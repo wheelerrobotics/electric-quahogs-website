@@ -18,7 +18,7 @@ module.exports = {
         resolve: 'gatsby-plugin-robots-txt',
         options: {
           host: 'https://electricquahogs.gatsbyjs.io',
-          sitemap: 'https://electricquahogs.gatsbyjs.io/sitemap.xml',
+          //sitemap: 'https://electricquahogs.gatsbyjs.io/sitemap.xml',
           resolveEnv: () => process.env.GATSBY_ENV,
           env: {
             development: {

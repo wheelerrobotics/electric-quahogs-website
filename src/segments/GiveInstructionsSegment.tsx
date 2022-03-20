@@ -15,7 +15,7 @@ function GiveInstructionsSegment() {
         }}>
           <ol className="instructions">
             <li>
-                <p>First, go to <u style={{cursor: "pointer"}}><a onClick={(e)=>{window.open("https://www.wheelerschool.org/support")}}>wheelerschool.org/support</a></u>.</p>
+                <p>First, go to <u style={{cursor: "pointer"}}><a onClick={(e)=>{window.open("https://www.wheelerschool.org/support")}} href="https://www.wheelerschool.org/support">wheelerschool.org/support</a></u>.</p>
             </li>
             <li>
               <p>Then click "Make A Gift"</p>
