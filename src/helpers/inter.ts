@@ -3,26 +3,25 @@ import cn from "../images/sponsors/cns.png"
 import isBrowser from "./isBrowser";
 
 function newInter(this: any, canvasid: string){
-    if(!document) return
-var Engine = Matter.Engine,
-    Render = Matter.Render,
-    Runner = Matter.Runner,
-    Composites = Matter.Composites,
-    Common = Matter.Common,
-    MouseConstraint = Matter.MouseConstraint,
-    Mouse = Matter.Mouse,
-    Composite = Matter.Composite,
-    Bodies = Matter.Bodies;
+    if(!isBrowser()) return
+    var Engine = Matter.Engine,
+        Render = Matter.Render,
+        Runner = Matter.Runner,
+        Composites = Matter.Composites,
+        Common = Matter.Common,
+        MouseConstraint = Matter.MouseConstraint,
+        Mouse = Matter.Mouse,
+        Composite = Matter.Composite,
+        Bodies = Matter.Bodies;
 
     // create engine
     var engine = Engine.create(),
     world = engine.world; 
-    let can: HTMLCanvasElement | null = null;
-    while (can == null) can = document.getElementById(canvasid) as HTMLCanvasElement;
+
+    let can: HTMLCanvasElement = document.getElementById(canvasid) as HTMLCanvasElement;
     let width = window.innerWidth;
     let height = 3*window.innerHeight/10;
-    let papa: HTMLElement | null = null;
-    while (papa == null) papa = document.getElementById('tata') as HTMLElement;
+    let papa: HTMLElement = document.getElementById('tata') as HTMLElement;
     (document.getElementById(canvasid) as HTMLCanvasElement).width = width as number;
     (document.getElementById(canvasid) as HTMLCanvasElement).height = height as number;
     const updateCan = ():any=>{
@@ -42,8 +41,9 @@ var Engine = Matter.Engine,
         wireframeBackground: '#44151f',
     }
     });
+    updateCan()
     document.addEventListener('scroll', (e)=>{updateCan()})
-    setInterval(updateCan, 10);
+    //setInterval(updateCan, 10);
 
     Render.run(render);
 
@@ -123,13 +123,11 @@ var Engine = Matter.Engine,
         ctx?.rotate(rot);
         ctx?.drawImage(img, width / 2 * (-1), height / 2 * (-1), width, height);
     }
-    Events.on(runner, "afterTick", (e)=>{
+    Events.on(runner, "beforeTick", (e)=>{
         for (let sponsor of Object.values(sponsors)){
             for (let b of world.bodies){
                 if(b.label == sponsor.label){
                     drawImageRot(sponsor.img, b.position.x, b.position.y, sponsor.size, sponsor.size, b.angle)
-                    
-                    //console.log('bodi', b.position.x, b.position.y)
                 }
             }
         }

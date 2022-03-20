@@ -2,9 +2,9 @@ import * as React from "react"
 import "../css/textbox_styles.css"
 import "../css/mobile/m_textbox_styles.css"
 
-function SideBar(props: {img: string, thanks: string} | any) {
+function SideBar(props: {img: string, thanks: string, name: string} | any) {
         return <div className="sponsor">
-                    <img src={props.img} style={{
+                    <img alt={`${props.name}`} src={props.img} style={{
                         width: '100%'
                     }}></img>
                     <h6 style={{

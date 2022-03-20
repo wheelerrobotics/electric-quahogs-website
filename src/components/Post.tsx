@@ -9,7 +9,7 @@ function Post(props: { title: string, subtitle:string, date: string, author: str
         return <div className="post">
             
             {/* <img src={props.img} className="post_img" width={typeof window !== 'undefined' && window.innerWidth ? window.innerWidth/2 : 300}></img> */}
-            <img src={props.img} className="post_img"></img>
+            <img alt={`image of ${props.title}`} src={props.img} className="post_img"></img>
             <h1 className="post_title">{props.title}</h1>
             <h2 className="post_desc">{props.subtitle}</h2>
             <p className="post_date">{props.date}</p>

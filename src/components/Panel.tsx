@@ -12,7 +12,7 @@ function Panel(props: {title: string, subtitle: string, date: string, author: st
                             e!.currentTarget!.parentElement!.parentElement!.parentElement!.parentElement!.hidden = true
                         }}>x</button>
                     </div>
-                    <img src={props.img}></img>
+                    <img alt={`image of ${props.title}`} src={props.img}></img>
                     <h1>{props.title ?? "Breaking News!"}</h1>
                     <div style={{
                         display: "flex",

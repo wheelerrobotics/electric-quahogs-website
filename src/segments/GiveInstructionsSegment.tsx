@@ -15,23 +15,23 @@ function GiveInstructionsSegment() {
         }}>
           <ol className="instructions">
             <li>
-                <p>First, go to <u style={{cursor: "pointer"}}><a onClick={(e)=>{window.open("https://www.wheelerschool.org/support")}} >wheelerschool.org/support</a></u>.</p>
+                <p>First, go to <u style={{cursor: "pointer"}} onClick={(e)=>{window.open("https://www.wheelerschool.org/support")}}>wheelerschool.org/support</u>.</p>
             </li>
             <li>
               <p>Then click "Make A Gift"</p>
-              <img src={step2} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 200 : ""}></img>
+              <img alt="make a gift" src={step2} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 200 : ""}></img>
             </li>
             <li>
               <p>Next, select your donation amount.</p>
-              <img src={step1} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 260 : ""}></img>
+              <img alt="donation amount" src={step1} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 260 : ""}></img>
             </li>
             <li>
               <p>After that, select <u><i>Robotics World Champion Sponsorship</i></u> as the designation.</p>
-              <img src={step4} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 270 : ""}></img>
+              <img alt="designation" src={step4} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 270 : ""}></img>
             </li>
             <li>
               <p>Finally, secure your payment!</p>
-              <img src={step5} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 220 : ""}></img>
+              <img alt="secure payment!" src={step5} height={isBrowser() ? (window.innerWidth > 600) ? 200 : "" : "" } width={isBrowser() ? (window.innerWidth > 600) ? "" : 220 : ""}></img>
             </li>
           </ol>
           <hr></hr>

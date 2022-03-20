@@ -6,10 +6,7 @@ import "../helpers/inter.ts";
 import logo from "../favicon/logotrans.png"
 import logofull from "../favicon/logofulltrans.png"
 
-import SEO from "../components/SEYO"
 import Helm from "../components/Hemlet";
-import PostArea from "../segments/PostsSegment";
-import statesimg from '../images/stateswin.jpg'
 import NewsPanelSegment from "../segments/NewsPanelSegment";
 import FooterSegment from "../segments/FooterSegment";
 import AboutSegment from "../segments/AboutSegment";
@@ -22,29 +19,12 @@ import SideMenuSegment from "../segments/SideMenuSegment";
 import PortfolioSegment from "../segments/PortfolioSegment";
 import isBrowser from "../helpers/isBrowser";
 import NavBarSegment from "../segments/NavBarSegment";
-import { Helmet } from "react-helmet";
 
 // styles
-const pageStyles = {
-  color: "rgb(100, 100, 100)",
-};
-const news = {
-  title: "BREAKING NEWS",
-  subtitle: "Quahogs win states!",
-  author: "daniel duarte-baird",
-  date: "3/5/22",
-  img: statesimg,
-  content: "the quahogs have won stats, this means theyre going to worlds",
-  cookie: "winstates"
-}
 function mobileCheck() {
   if(window.innerWidth < 600) location.href = '/m_index';
 }
 
-// data
-const links = [
-  
-]
 
 // markup
 const IndexPage = () => {
@@ -53,18 +33,7 @@ const IndexPage = () => {
 
   <main>
     <Helm></Helm>
-      <SEO></SEO>
-      <Helmet></Helmet>
-<script type="application/ld+json">
-    {`
-        {
-          "@context": "https://electricquahogs.gatsbyjs.io",
-          "@type": "Wheeler Robotics",
-          "url": "https://electricquahogs.gatsbyjs.io",
-          "name": "Electric Quahogs",
-        }
-      `}
-  </script>
+      
       
       {/* <meta name="icon" href={logo}/> */}
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
@@ -78,7 +47,7 @@ const IndexPage = () => {
         <div id="home">
           <div className="page_area">
             <div className="title_area">
-              <img src={isBrowser() ? window.innerWidth < 600 ? logofull : logo : logofull} height={200} style={{marginBottom: "2%"}}></img><h1 hidden={isBrowser() ? window.innerWidth < 600 ? true : false : false}>Electric Quahogs!</h1>
+              <img alt="Electric Quahogs Logo!" src={isBrowser() ? window.innerWidth < 600 ? logofull : logo : logofull} height={200} style={{marginBottom: "2%"}}></img><h1 hidden={isBrowser() ? window.innerWidth < 600 ? true : false : false}>Electric Quahogs!</h1>
             </div>
             <div className="page_body">
 
