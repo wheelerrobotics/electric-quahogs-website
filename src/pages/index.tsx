@@ -6,7 +6,7 @@ import "../helpers/inter.ts";
 import logo from "../favicon/logotrans.png"
 import logofull from "../favicon/logofulltrans.png"
 
-import Seo from "../components/SEYO"
+import SEO from "../components/SEYO"
 import Helm from "../components/Hemlet";
 import PostArea from "../segments/PostsSegment";
 import statesimg from '../images/stateswin.jpg'
@@ -53,9 +53,9 @@ const IndexPage = () => {
 
   <main>
     <Helm></Helm>
-      <Seo></Seo>
-      <Helmet>
-  <script type="application/ld+json">
+      <SEO></SEO>
+      <Helmet></Helmet>
+<script type="application/ld+json">
     {`
         {
           "@context": "https://electricquahogs.gatsbyjs.io",
@@ -65,7 +65,7 @@ const IndexPage = () => {
         }
       `}
   </script>
-</Helmet>
+      
       {/* <meta name="icon" href={logo}/> */}
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossOrigin="anonymous"></link>
