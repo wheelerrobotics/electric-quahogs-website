@@ -44,6 +44,7 @@ function Helm ({ title, description, image, article }: any){
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
         <title>{seo.title}</title>
+        <meta name="google-site-verification" content="nV_HnpSPrSBxW5AgxSPX8bIagK5kID_cWnwSEJy21LQ" />
         //linkTags= 
         //canonical=
         //facebook=
