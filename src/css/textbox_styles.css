@@ -12,8 +12,16 @@
 .textbox_header > h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.textbox_body > img {
+    text-align: center;
+    font-size: 30px;
+    float: right;
+    font-weight: bold;
+}
 .textbox_body > * {
-    margin-right: 50%;
+    /* margin-right: 50%; */
+    font-size: 18pt;
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 

@@ -10,6 +10,12 @@
     flex-direction: column;
     height: max-content;
 }
+.textbox_body > img {
+    text-align: center;
+    font-size: 30px;
+    float: right;
+    font-weight: bold;
+}
 .textbox_header > h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }

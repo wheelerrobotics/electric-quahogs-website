@@ -38,6 +38,8 @@ import SponsorSegment from "../segments/SponsorSegment";
 import SideMenuSegment from "../segments/SideMenuSegment";
 import GiveInstructionsSegment from "../segments/GiveInstructionsSegment";
 import PortfolioSegment from "../segments/PortfolioSegment";
+import WillKopansSegment from "../segments/WillKopansSegment";
+import WillKopansIsBackSegment from "../segments/WillKopansIsBackSegment";
 // styles
 const pageStyles = {
   color: "rgb(100, 100, 100)",
@@ -120,6 +122,8 @@ const IndexPage = () => {
           <h1>What We Have Done</h1>
         </div>
         <div id="page_area">
+          <WillKopansSegment></WillKopansSegment>
+          <WillKopansIsBackSegment></WillKopansIsBackSegment>
               <PortfolioSegment></PortfolioSegment>
 
         </div>

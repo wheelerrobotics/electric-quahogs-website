@@ -19,6 +19,8 @@ import SideMenuSegment from "../segments/SideMenuSegment";
 import PortfolioSegment from "../segments/PortfolioSegment";
 import isBrowser from "../helpers/isBrowser";
 import NavBarSegment from "../segments/NavBarSegment";
+import WillKopansSegment from "../segments/WillKopansSegment";
+import WillKopansIsBackSegment from "../segments/WillKopansIsBackSegment";
 
 // styles
 function mobileCheck() {
@@ -78,9 +80,11 @@ const IndexPage = () => {
       </div>
       <div id="work" hidden>
         <div className="title_area">
-          <h1>What We Have Done</h1>
+          <h1>What We Do</h1>
         </div>
         <div id="page_area">
+          <WillKopansSegment></WillKopansSegment>
+          <WillKopansIsBackSegment></WillKopansIsBackSegment>
           <PortfolioSegment></PortfolioSegment>
 
         </div>
