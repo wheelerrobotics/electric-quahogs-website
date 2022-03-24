@@ -63,6 +63,8 @@ h4 {
     outline: 2px gray solid;
     padding: 2%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     height: max-content;
 }
