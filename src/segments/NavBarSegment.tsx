@@ -1,6 +1,6 @@
 import * as React from "react"
 import Navi from "../components/Navi"
-import NaviButton from "../components/NaviButton"
+import { NaviButton } from "../components/NaviButton"
 
 function NavBarSegment() {
         return <Navi>

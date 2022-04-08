@@ -22,6 +22,7 @@ import NavBarSegment from "../segments/NavBarSegment";
 import WillKopansSegment from "../segments/WillKopansSegment";
 import WillKopansIsBackSegment from "../segments/WillKopansIsBackSegment";
 import WhyGiveSegment from "../segments/WhyGiveSegment";
+import { switchPage } from "../components/NaviButton";
 
 // styles
 function mobileCheck() {
@@ -38,13 +39,20 @@ const IndexPage = () => {
     <Helm></Helm>
       
       
-      {/* <meta name="icon" href={logo}/> */}
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossOrigin="anonymous"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossOrigin="anonymous"></link>
       <script src="https://kit.fontawesome.com/64919bd2ce.js" crossOrigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossOrigin="anonymous"></link>
       <NavBarSegment></NavBarSegment>
+      {
+        ()=>{
+          if(window.location.href.includes("##")){
+            //if(!isBrowser()) return;
+            switchPage(window.location.href.split("##")[1])
+          }
+        }
+      }
       <div id="pages" >
         
         <div id="home">
@@ -124,3 +132,4 @@ function setCookie(cname: string, cvalue: string, exdays: number) {
 }
 
 export default IndexPage
+
