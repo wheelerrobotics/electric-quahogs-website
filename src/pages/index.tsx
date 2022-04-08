@@ -21,6 +21,7 @@ import isBrowser from "../helpers/isBrowser";
 import NavBarSegment from "../segments/NavBarSegment";
 import WillKopansSegment from "../segments/WillKopansSegment";
 import WillKopansIsBackSegment from "../segments/WillKopansIsBackSegment";
+import WhyGiveSegment from "../segments/WhyGiveSegment";
 
 // styles
 function mobileCheck() {
@@ -76,6 +77,7 @@ const IndexPage = () => {
         <div className="title_area">
             <h1>How <i>You</i> Can Help</h1>
           </div>
+          <WhyGiveSegment></WhyGiveSegment>
           <GiveInstructionsSegment></GiveInstructionsSegment>
       </div>
       <div id="work" hidden>
