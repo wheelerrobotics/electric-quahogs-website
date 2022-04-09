@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
+import { switchPage } from "./NaviButton"
+import isBrowser from "../helpers/isBrowser"
 
 
 const query = graphql`
@@ -37,6 +39,8 @@ function Helm ({ title, description, image, article }: any){
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   }
+  
+
     return (
       <div className="application">
         <Helmet>

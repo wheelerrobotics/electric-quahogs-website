@@ -24,15 +24,24 @@ import WillKopansIsBackSegment from "../segments/WillKopansIsBackSegment";
 import WhyGiveSegment from "../segments/WhyGiveSegment";
 import { switchPage } from "../components/NaviButton";
 
+
+
 // styles
 function mobileCheck() {
   if(window.innerWidth < 600) location.href = '/m_index';
 }
-
+function lod() {
+  if(window.location.href.includes("##")){
+    if(!isBrowser()) return; 
+    switchPage(window.location.href.split("##")[1])
+    console.log("WASt switchPage")
+  }
+}
 
 // markup
 const IndexPage = () => {
   isBrowser() ? mobileCheck() : null;
+  setTimeout(lod, 300);
   return (
 
   <main>
@@ -45,14 +54,7 @@ const IndexPage = () => {
       <script src="https://kit.fontawesome.com/64919bd2ce.js" crossOrigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossOrigin="anonymous"></link>
       <NavBarSegment></NavBarSegment>
-      {
-        ()=>{
-          if(window.location.href.includes("##")){
-            //if(!isBrowser()) return;
-            switchPage(window.location.href.split("##")[1])
-          }
-        }
-      }
+      
       <div id="pages" >
         
         <div id="home">

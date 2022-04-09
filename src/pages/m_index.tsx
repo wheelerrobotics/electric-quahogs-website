@@ -1,7 +1,7 @@
 import * as React from "react"
 import "../css/styles.css"
 import "../css/mobile/m_styles.css"
-import NaviButton from "../components/NaviButton";
+import {NaviButton, switchPage} from "../components/NaviButton";
 import Navi from "../components/Navi";
 import Post from "../components/Post";
 import Leader from "../components/Leader";
@@ -40,6 +40,7 @@ import GiveInstructionsSegment from "../segments/GiveInstructionsSegment";
 import PortfolioSegment from "../segments/PortfolioSegment";
 import WillKopansSegment from "../segments/WillKopansSegment";
 import WillKopansIsBackSegment from "../segments/WillKopansIsBackSegment";
+import isBrowser from "../helpers/isBrowser";
 // styles
 const pageStyles = {
   color: "rgb(100, 100, 100)",
@@ -50,8 +51,16 @@ const links = [
   
 ]
 
+function lod() {
+  if(window.location.href.includes("##")){
+    if(!isBrowser()) return; 
+    switchPage(window.location.href.split("##")[1])
+    console.log("WASt switchPage")
+  }
+}
 // markup
 const IndexPage = () => {
+  setTimeout(lod, 300);
   return (
 
   <main>
