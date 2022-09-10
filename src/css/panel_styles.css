@@ -35,10 +35,10 @@
 .panel_body {
     background-color: gray;
     margin-inline: auto;
-    margin-top: 10%;
-    width: 50%;
+    margin-top: 10vh;
+    width: 50vw;
     border: 2px rgb(61, 61, 61) solid;
-    height: 80%;
+    height: 80vh;
     overflow-y: scroll;
 
 }

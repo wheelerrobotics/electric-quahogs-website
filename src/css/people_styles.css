@@ -7,7 +7,6 @@
 }
 .person_img {
     border-radius: 50%;
-    height: 80%;
     transition: 300ms;
 }
 .person_name {

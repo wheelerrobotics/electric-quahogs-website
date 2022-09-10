@@ -1,5 +1,5 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
 
 // styles
 /* const pageStyles = {
@@ -29,10 +29,13 @@ const NotFoundPage = () => {
   return (
     <main>
       <title>Page Not Found</title>
-        <p>If this inconvinienced you, please send <a>william.kopans@wheelergmail.org</a> a very angry email</p>
-        <Link to="/">Go home</Link>
+      <p>
+        If this inconvinienced you, please send <a>William.Kopans@colby.edu</a>{" "}
+        a very angry email
+      </p>
+      <Link to="/">Go home</Link>
     </main>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
