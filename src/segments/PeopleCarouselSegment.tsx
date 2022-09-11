@@ -23,54 +23,54 @@ function PeopleCarouselSegment() {
         name={"Daniel Duarte-Baird"}
         grad_year={"2025"}
         email={"daniel.duarte-baird@wheelergmail.org"}
-        bio={"He's a bird, he's a plane, he's daniel duarte-baird!"}
+        bio={'"I coded this website"'}
         img={danielpic}
       ></Normie>
       <Normie
         name={"Beatrice Schroder"}
         grad_year={"2024"}
         email={"beatrice.schroder@wheelergmail.org"}
-        bio={"She's a bird, she's a plane, she's beatrice schroder!"}
+        bio={" "}
         img={beatricepic}
       ></Normie>
       {/* <Normie name={"Myles Johnson"} grad_year={"2023"} email={"myles.johnson@wheelergmail.org"} bio={"He's a bird, he's a plane, he's myles johnson!"} img={mylespic}></Normie> */}
       {/* <Normie name={"Reed Turner-Murray"} grad_year={"2022"} email={"reed.turner-murray@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a reed!"} img={reedpic}></Normie> */}
       {/* <Normie name={"Tyler Wang"} grad_year={"2024"} email={"tyler.wang@wheelergmail.org"} bio={"He's a bird, he's a plane, he's tyler wang!"} img={tylerpic}></Normie> */}
-      <Normie
+      {/* <Normie
         name={"Jaiden Dash"}
         grad_year={"2024"}
         email={"jaiden.dash@wheelergmail.org"}
-        bio={"They're a bird, they're a plane, they're a dash!"}
+        bio={" "}
         img={jaidenpic}
-      ></Normie>
+      ></Normie> */}
       <Normie
         name={"Lily Thornton"}
         grad_year={"2024"}
         email={"lily.thornton@wheelergmail.org"}
-        bio={"He's a bird, she's a plane, they're lily thornton!"}
+        bio={" "}
         img={lilypic}
       ></Normie>
       <Normie
         name={"Griffin Haismann"}
         grad_year={"2025"}
         email={"griffin.haismann@wheelergmail.org"}
-        bio={"He's a bird, he's a plane, he's a griffin!"}
+        bio={" "}
         img={griffinpic}
       ></Normie>
-      <Normie
+      {/* <Normie
         name={"Seoyon Kim"}
         grad_year={"2025"}
         email={"seoyon.kim@wheelergmail.org"}
-        bio={"She's a bird, she's a plane, she's seoyon kim!"}
+        bio={" "}
         img={seoyonpic}
-      ></Normie>
-      <Normie
+      ></Normie> */}
+      {/* <Normie
         name={"Isabelle Cresensci"}
         grad_year={"2025"}
         email={"isabelle.Cresensci@wheelergmail.org"}
-        bio={"She's a bird, she's a plane, she's isabelle!"}
+        bio={" "}
         img={isabellepic}
-      ></Normie>
+      ></Normie> */}
       {/* <Normie name={"Jackson Page"} grad_year={"2025"} email={"jackson.page@wheelergmail.org"} bio={"He's a bird, he's a plane, he's jackson page!"} img={"../../images/Portraits/Jackson.jpg"}></Normie> */}
       {/* <Normie name={"Charlie Shea"} grad_year={"2025"} email={"charlie.shea@wheelergmail.org"} bio={"He's a bird, he's a plane, he's charlie shea!"} img={"../../images/Portraits/Charlie.jpg"}></Normie> */}
       {/* <Normie name={"Sam Kurtis"} grad_year={"2022"} email={"sam.kurtis@wheelergmail.org"} bio={"He's a bird, he's a plane, he's sam kurtis!"} img={sampic}></Normie> */}
