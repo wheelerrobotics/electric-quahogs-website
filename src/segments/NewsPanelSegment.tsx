@@ -4,14 +4,13 @@ import statesimg from "../images/stateswin.jpg";
 import { getCookie, setCookie } from "../helpers/cookieHelper";
 
 const news = {
-  title: "BREAKING NEWS",
-  subtitle: "YOU SHOULD JOIN ROBOTICS",
+  title: "Starting the year with a bang!",
+  subtitle: "",
   author: "daniel duarte-baird",
   date: "9/6/22",
-  img: "https://api.time.com/wp-content/uploads/2017/04/sam.jpeg?quality=100&w=610",
-  content:
-    "y'all, i promise we're really cool and fun and awsome people. also its a really fun club",
-  cookie: "JOINNOW",
+  img: "",
+  content: "",
+  cookie: "STARTUP",
 };
 
 function NewsPanelSegment() {
@@ -20,8 +19,8 @@ function NewsPanelSegment() {
       id="news_panel_div"
       hidden
       onLoad={(e) => {
-        e.currentTarget.hidden =
-          getCookie("news") != news.cookie ? false : true;
+        e.currentTarget.hidden = true;
+        // getCookie("news") != news.cookie ? false : true;
         setCookie("news", news.cookie, 365);
       }}
     >

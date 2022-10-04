@@ -7,7 +7,7 @@ import clubimg from "../images/club.jpg";
 function PostsSegment() {
   return (
     <div className="posts_area">
-      <Post
+      {/*  <Post
         title={"If you're thinking about joining, read this!"}
         subtitle={""}
         author={"daniel duarte-baird"}
@@ -81,7 +81,7 @@ function PostsSegment() {
         something at a different time, ask Mr. Ryder in the dib lab if you can
         work on robotics and he will probably have a free time when you can do
         so.
-      </Post>
+      </Post> */}
       <Post
         title={"Electric Quahogs Go To Worlds!"}
         subtitle={""}
@@ -168,7 +168,7 @@ function PostsSegment() {
         date={"the beginning"}
         author={"daniel duarte-baird"}
         img={
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/1024px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg"
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunrise-quotes-21-1586892331.jpg"
         }
       >
         For the first time ever, the Electric Quahogs have a place to document

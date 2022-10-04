@@ -17,7 +17,7 @@ import nathanpic from "../images/Portraits/Nathan.jpg"; // ahhhhh
 
 function PeopleCarouselSegment() {
   return (
-    <PeopleCarousel title="normies :(">
+    <PeopleCarousel title="Other Members">
       {/* <Normie name={"Henry Germano"} grad_year={"2022"} email={"henry.germano@wheelergmail.org"} bio={"He's a bird, he's a plane, he's a plane!"} img={henrypic}></Normie> */}
       <Normie
         name={"Daniel Duarte-Baird"}
