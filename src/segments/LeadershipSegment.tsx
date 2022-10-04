@@ -19,7 +19,7 @@ function LeadershipSegment() {
         ></Leader>
         <Leader
           name={"Mayte Segura"}
-          grad_year={"2022"}
+          grad_year={"2024"}
           email={"mayte.segura@wheelergmail.org"}
           bio={"Super cool person alert"}
           cool={true}
