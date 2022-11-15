@@ -52,7 +52,6 @@ function lod() {
   if (!isBrowser()) return;
   if (window.location.href.includes("##")) {
     switchPage(window.location.href.split("##")[1]);
-    console.log("WASt switchPage");
   }
 }
 // markup
@@ -184,7 +183,7 @@ const IndexPage = () => {
             <PeopleCarouselSegment></PeopleCarouselSegment>
           </div>
         </div>
-        {/* <div id="give" hidden>
+        {/* <div id="give" hidde`n>
         <div className="title_area">
             <h1>How <i>You</i> Can Help</h1>
           </div>

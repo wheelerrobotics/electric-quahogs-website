@@ -32,7 +32,6 @@ function lod() {
   if (window.location.href.includes("##")) {
     if (!isBrowser()) return;
     switchPage(window.location.href.split("##")[1]);
-    console.log("WASt switchPage");
   }
 }
 

@@ -51,6 +51,33 @@ function PeopleCarouselSegment() {
         img={lilypic}
       ></Normie>
       <Normie
+        name={"Sabi Gonzalez"}
+        grad_year={"2024"}
+        email={"sabrina.gonzalez@wheelergmail.org"}
+        bio={" "}
+        img={
+          "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+        }
+      ></Normie>
+      <Normie
+        name={"Luyao Lei"}
+        grad_year={"2024"}
+        email={"luyao.lei@wheelergmail.org"}
+        bio={" "}
+        img={
+          "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+        }
+      ></Normie>
+      <Normie
+        name={"Charlie Shea"}
+        grad_year={"2024"}
+        email={"charlie.shea@wheelergmail.org"}
+        bio={" "}
+        img={
+          "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+        }
+      ></Normie>
+      <Normie
         name={"Griffin Haismann"}
         grad_year={"2025"}
         email={"griffin.haismann@wheelergmail.org"}
