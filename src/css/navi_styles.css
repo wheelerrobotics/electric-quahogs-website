@@ -6,6 +6,7 @@
     height: 40px;
     margin-inline: 2%;
     display: inline;
+    color: black;
 }
 .navi_button > * {
     margin: 0%;

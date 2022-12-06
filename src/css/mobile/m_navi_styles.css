@@ -1,13 +1,14 @@
 @media only screen and (max-width: 600px) {
     .navi_button {
-        background: linear-gradient(0deg, beige 0%, rgb(253, 253, 192) 100%);
-        border: 3px solid olive;
+        background: transparent;/*linear-gradient(0deg, beige 0%, rgb(253, 253, 192) 100%);*/
+        border: none;/* 3px solid olive; */
         font-size: 90%;
         padding: 1%;
         height: 70px;
         margin-inline: 2%;
         margin-top: 10px;
         display: inline;
+        color: black;
     }
     .navi_button > * {
         margin: 0%; 
